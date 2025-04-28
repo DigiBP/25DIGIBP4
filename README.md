@@ -20,4 +20,23 @@ The goal of the assignment is to develop a solution that applies the DigiBP appr
 
 The Order-to-Cash process begins when a customer places an order via email directly with their assigned Customer Service (CS) agent. The CS agent manually opens SAP, fills in the order header, and — when available — uses a reference from a prior quotation to simplify order entry. If no quotation match is found, the agent must manually input all items into SAP. CS agents periodically check order statuses in SAP (without automated alerts) and request dispatch once the order is ready. For orders involving assembly (product type "F"), planners are involved. Throughout the process, CS agents manually track important information (e.g., orders without confirmed shipping dates) in Excel spreadsheets. Communication with customers regarding order status or delays is manual, and customers often inquire directly with CS agents.
 
+# Challanges of the Process
+
 # TO-BE Process
+
+# Make Scenarios
+
+# Google Forms
+
+# Email Notification
+
+# Dilverables
+The following deliverables are mandatory: 
+  • Link to GitHub repositories containing: 
+    o Modelling artefacts (such as BPMN or DMN) and, if required, other project arte
+      facts (such as configuration files, source code, etc.) 
+    o Documentation about the project and processes (as GitHub markdown files (e.g., 
+      Readme and interlinked .md files)) 
+• Link to a running workflow(s) and/or instantiation(s) of a: 
+    o Link to start form(s) and/or cloud-based deployment(s) 
+• Link to presentation slides
