@@ -32,11 +32,11 @@ The Order-to-Cash process begins when a customer places an order via email direc
 
 # Dilverables
 The following deliverables are mandatory: 
-  • Link to GitHub repositories containing: 
-    o Modelling artefacts (such as BPMN or DMN) and, if required, other project arte
+- Link to GitHub repositories containing: 
+    - Modelling artefacts (such as BPMN or DMN) and, if required, other project arte
       facts (such as configuration files, source code, etc.) 
-    o Documentation about the project and processes (as GitHub markdown files (e.g., 
+    - Documentation about the project and processes (as GitHub markdown files (e.g., 
       Readme and interlinked .md files)) 
-• Link to a running workflow(s) and/or instantiation(s) of a: 
-    o Link to start form(s) and/or cloud-based deployment(s) 
-• Link to presentation slides
+- Link to a running workflow(s) and/or instantiation(s) of a: 
+   - Link to start form(s) and/or cloud-based deployment(s) 
+- Link to presentation slides
