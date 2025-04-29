@@ -4,7 +4,7 @@
 |-------------------------|----------------------------------------------|
 | Ellona Tsap             | ellona.tsap@students.fhnw.ch                 |
 | Lukas Janotka           | lukas.janotka@students.fhnw.ch               |
-| Patricia Abel           | lukas.janotka@students.fhnw.ch               |
+| Patricia Abel           | patricia.abel@students.fhnw.ch               |
 | Ramona Steinauer        | ramona.steinauer@students.fhnw.ch	           |
 
 # Coaches
