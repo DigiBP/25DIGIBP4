@@ -30,7 +30,7 @@ The Order-to-Cash process begins when a customer places an order via email direc
 
 # Email Notification
 
-# Dilverables
+# Deliverables
 The following deliverables are mandatory: 
 - Link to GitHub repositories containing: 
     - Modelling artefacts (such as BPMN or DMN) and, if required, other project arte
