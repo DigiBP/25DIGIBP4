@@ -5,10 +5,11 @@
 | Ellona Tsap             | ellona.tsap@students.fhnw.ch                 |
 | Lukas Janotka           | lukas.janotka@students.fhnw.ch               |
 | Patricia Abel           | patricia.abel@students.fhnw.ch               |
-| Ramona Steinauer        | ramona.steinauer@students.fhnw.ch	           |
+| Ramona Steinauer        | ramona.steinauer@students.fhnw.ch	         |
 
 # Coaches
 
+- Andreas Martin
 - Charuta Pande 
 - Devid Montecchiari
 
@@ -18,19 +19,52 @@ The goal of the assignment is to develop a solution that applies the DigiBP appr
 
 # AS-IS Process
 
+
 The Order-to-Cash process begins when a customer places an order via email directly with their assigned Customer Service (CS) agent. The CS agent manually opens SAP, fills in the order header, and — when available — uses a reference from a prior quotation to simplify order entry. If no quotation match is found, the agent must manually input all items into SAP. CS agents periodically check order statuses in SAP (without automated alerts) and request dispatch once the order is ready. For orders involving assembly (product type "F"), planners are involved. Throughout the process, CS agents manually track important information (e.g., orders without confirmed shipping dates) in Excel spreadsheets. Communication with customers regarding order status or delays is manual, and customers often inquire directly with CS agents.
+
+Roles and Abbreviations
+Internal: 
+- Procurement
+
+
+External:
+- Client
+- Vendor
 
 # Challanges of the Process
 
+Fragmented Communication
+Manual Document Preparation
+Inefficient Follow-Up
+Bottlenecks
+Lack of Workflow Automation
+
 # TO-BE Process
+
+
+Technologies Used
+
+| Component                    | Purpose                                        |
+|-------------------------|----------------------------------------------|
+| Camunda 7            | |
+| BPMN 2.0       |            |
+| DMN         |             |
+| Google Form      |        |
+| Google Sheet     | 
+| Post             | 
+| Make                |
+| Voice             |
+
+
+# Google Form
 
 # Make Scenarios
 
-# Google Forms
-
 # Email Notification
 
-# Deliverables
+# Process Improvements
+What got improved?
+
 The following deliverables are mandatory: 
 - Link to GitHub repositories containing: 
     - Modelling artefacts (such as BPMN or DMN) and, if required, other project arte
