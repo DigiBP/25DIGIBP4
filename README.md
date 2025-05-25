@@ -13,7 +13,7 @@
 - Charuta Pande 
 - Devid Montecchiari
 
-# Project Goals
+# 🎯 Project Goals
 
 The goal of the assignment is to develop a solution that applies the DigiBP approach to a business process, demonstrating how digital technologies can improve process performance. 
 
@@ -25,16 +25,16 @@ This order-to-shipment is a key supporting process to a sales process. It involv
 
 The Order-to-Cash process begins when a customer places an order via google form with their assigned Customer Service (CS) agent. The CS agent manually opens SAP, fills in the order header, and — when available — uses a reference from a prior quotation to simplify order entry. If no quotation match is found, the agent must manually input all items into SAP. CS agents periodically check order statuses in SAP (without automated alerts) and request dispatch once the order is ready. For orders involving assembly (product type "F"), planners are involved. Throughout the process, CS agents manually track important information (e.g., orders without confirmed shipping dates) in Excel spreadsheets. Communication with customers regarding order status or delays is manual, and customers often inquire directly with CS agents.
 
-Roles
-Internal: 
+📹 [Watch the process video Camunda Token](as-is%20Route%201.mp4)
+
+**Roles involved into the process**:
+Internal
 - Procurement
 - Customer Service (CS)
 
 External:
 - Client
 - Vendor
-
-📹 [Watch the process video](as-is%20Route%201.mp4)
 
 # 🧩 Challanges of the Process
 
@@ -59,7 +59,8 @@ Such level of manual coordination leads to a substantial amount of time spent on
 - **Lack of Workflow Automation**  
   The absence of automated decision-making and notifications leads to unnecessary workload and time losses.
 
-### 🎯 Goal
+  
+# TO-BE Process
 
 Our goal is to **automate parts of the order-to-shipment process**, especially the goods availability check. By doing so, we aim to:
 
@@ -67,19 +68,16 @@ Our goal is to **automate parts of the order-to-shipment process**, especially t
 - Improve customer experience
 - Save time for the customer service team
 - Enable the team to focus on continuous improvement
-  
-# TO-BE Process
-
 
 Technologies Used
 
 | Component                    | Purpose                                        |
 |-------------------------|----------------------------------------------|
-| Camunda 7            | |
-| BPMN 2.0       |            |
+| Camunda 7            |Modeling the business process |
+| BPMN 2.0       |Used Modeling-Language            |
 | DMN         |             |
 | Google Form      |        |
-| Google Sheet     | 
+| Google Sheet     |As database for testing simulated orders|
 | Post             | 
 | Make                |
 | Voice             |
