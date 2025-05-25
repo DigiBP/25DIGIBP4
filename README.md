@@ -32,7 +32,10 @@ External:
 - Client
 - Vendor
 
- [Watch as-is Route 1 video](as-is%20Route%201.mp4)
+<video width="600" controls>
+  <source src="as-is%20Route%201.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 # Challanges of the Process
 
