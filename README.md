@@ -26,11 +26,13 @@ The Order-to-Cash process begins when a customer places an order via email direc
 Roles and Abbreviations
 Internal: 
 - Procurement
-
+- Customer Service (CS)
 
 External:
 - Client
 - Vendor
+
+ [Watch as-is Route 1 video](as-is%20Route%201.mp4)
 
 # Challanges of the Process
 
