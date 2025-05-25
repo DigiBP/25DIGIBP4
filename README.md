@@ -17,13 +17,15 @@
 
 The goal of the assignment is to develop a solution that applies the DigiBP approach to a business process, demonstrating how digital technologies can improve process performance. 
 
-# AS-IS Process
+# 📦 AS-IS Process
+
+This order-to-shipment is a key supporting process to a sales process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires 
 
 ![As-Is Process](As_Is_Process.png)
 
-The Order-to-Cash process begins when a customer places an order via email directly with their assigned Customer Service (CS) agent. The CS agent manually opens SAP, fills in the order header, and — when available — uses a reference from a prior quotation to simplify order entry. If no quotation match is found, the agent must manually input all items into SAP. CS agents periodically check order statuses in SAP (without automated alerts) and request dispatch once the order is ready. For orders involving assembly (product type "F"), planners are involved. Throughout the process, CS agents manually track important information (e.g., orders without confirmed shipping dates) in Excel spreadsheets. Communication with customers regarding order status or delays is manual, and customers often inquire directly with CS agents.
+The Order-to-Cash process begins when a customer places an order via google form with their assigned Customer Service (CS) agent. The CS agent manually opens SAP, fills in the order header, and — when available — uses a reference from a prior quotation to simplify order entry. If no quotation match is found, the agent must manually input all items into SAP. CS agents periodically check order statuses in SAP (without automated alerts) and request dispatch once the order is ready. For orders involving assembly (product type "F"), planners are involved. Throughout the process, CS agents manually track important information (e.g., orders without confirmed shipping dates) in Excel spreadsheets. Communication with customers regarding order status or delays is manual, and customers often inquire directly with CS agents.
 
-Roles and Abbreviations
+Roles
 Internal: 
 - Procurement
 - Customer Service (CS)
@@ -32,19 +34,40 @@ External:
 - Client
 - Vendor
 
-<video width="600" controls>
-  <source src="as-is%20Route%201.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+📹 [Watch the process video](as-is%20Route%201.mp4)
 
-# Challanges of the Process
+# 🧩 Challanges of the Process
 
-Fragmented Communication
-Manual Document Preparation
-Inefficient Follow-Up
-Bottlenecks
-Lack of Workflow Automation
+One of the major challenges are a manual work relative to processing of PO and performing manual checks of goods availability which negatively affects the performance and efficiency. Process relies on manual communication in checking the availability of orderd goods and especially at the point when a goods availability check is performed, customer service team has to inform the relevant colleagues which is dependent on the result (see tasks marked green). 
+Such level of manual coordination leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time losses especially if not followed up immediately. This might ultimately lead to dissatisfaction of customers.  
 
+- **Fragmented Communication**  
+  Coordination between departments depends on manual notifications, leading to delays and errors.
+
+- **Manual Document Preparation**  
+  POs are received by email, validated, and entered into the system manually.
+
+- **Inefficient Goods Availability Check**  
+  Manual stock checks are performed, and customer service must inform other departments accordingly.
+
+- **Inefficient Follow-Up**  
+  Manual follow-ups are time-consuming and prone to being overlooked.
+
+- **Process Bottlenecks**  
+  Delays often occur when missing goods require procurement and production coordination.
+
+- **Lack of Workflow Automation**  
+  The absence of automated decision-making and notifications leads to unnecessary workload and time losses.
+
+### 🎯 Goal
+
+Our goal is to **automate parts of the order-to-shipment process**, especially the goods availability check. By doing so, we aim to:
+
+- Reduce manual tasks
+- Improve customer experience
+- Save time for the customer service team
+- Enable the team to focus on continuous improvement
+  
 # TO-BE Process
 
 
