@@ -30,8 +30,10 @@ The Order-to-Cash process begins when a customer places an order via google form
 **Roles involved into the process**:
 
 Internal
-- Procurement
-- Customer Service (CS)
+- Customer Service (CS): handles the incoming PO, the availability of ordered goods and informs other process participants of the outcome
+- Procurement: involved in procuring ordered items which are out-of-stock
+- Planner: involved in planning the production of out-of-stock items
+- Dispatch: performs warehouse jobs (picking and packing) in preparation to shipping goods
 
 External:
 - Client
@@ -63,7 +65,11 @@ Such level of manual coordination leads to a substantial amount of time spent on
   
 # TO-BE Process
 
-Our goal is to **automate parts of the order-to-shipment process**, especially the goods availability check. By doing so, we aim to:
+As the company grows, we seek to **reduce the amount of user tasks and manual work** needed to perform them especially the goods availability check. By achieving this partial automation, we will save time for parties invovled that can be dedicated on continuos improvement elsewhere. Our process solution will introduce a pratial automation eliminating the need to check goods manually while also reducing manual communication.
+
+Our Vision is not not only deliver a partial automation but also improve customer experience with the improved process.
+
+We aim to:
 
 - Reduce manual tasks
 - Improve customer experience
