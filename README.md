@@ -98,7 +98,6 @@ https://docs.google.com/spreadsheets/d/1acwL_7EVOsgsh5U8FepiyN8VsF1C-bmWOzAxlu0-
 
 # Email Notification
 
-Certainly. Here's a concise and professionally worded documentation section for your GitHub repository:
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
