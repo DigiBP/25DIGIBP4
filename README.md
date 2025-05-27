@@ -87,7 +87,7 @@ Technologies Used
 | Google Sheet     |As database for testing simulated orders|
 | Post             | 
 | Make                |
-| Voice             |
+| Voiceflow             |Used to design and deploy the conversational interface
 
 
 # Google Form
@@ -97,6 +97,21 @@ https://docs.google.com/spreadsheets/d/1acwL_7EVOsgsh5U8FepiyN8VsF1C-bmWOzAxlu0-
 # Make Scenarios
 
 # Email Notification
+
+Certainly. Here's a concise and professionally worded documentation section for your GitHub repository:
+
+# 💬 Voiceflow Chatbot – Digital Customer Support Assistant
+
+As part of the digitalization of the Order-to-Cash process, a chatbot was implemented to handle customer inquiries related to order status. The solution is designed to reduce manual communication, improve response times, and enhance customer satisfaction. The chatbot also guides the customer through inquiries concerning the changing the order, the order process and return inquiries.
+The chatbot enables customers to receive real-time answers on their questions by entering a valid order ID. It retrieves order information from Google Sheets databases. The chatbot operates through a voice or text interface and is accessible 24/7.
+
+The benefits of offering a chatbot as a service include the following:
+* Reduces manual workload for the Customer Service team.
+* Delivers consistent, fast, and reliable customer communication.
+* Enhances process transparency and customer satisfaction.
+* Easily scalable to cover additional services (e.g., delivery updates, FAQs).
+
+The chatbot is complements the Camunda-driven digital process and MAKE automated process flow by serving as a human-centric interface at the customer touchpoint.
 
 # Process Improvements
 What got improved?
