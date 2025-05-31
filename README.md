@@ -46,7 +46,8 @@ For a breakdown of specific challenges relative to this process see the below ov
 Our goal is to transform the current process by introducing a partial automation that will lead to removing a substantial part of the workflow within Customer Service, specifically the need to carry out goods availability check manually while reducing the chance of possible human erros. Another improvement is the elimination of manual  coomunication 
 
 # 📦 AS-IS Process
-https://github.com/DigiBP/25DIGIBP4/blob/main/order_to_shipping_as-is_23_05.bpmn
+* https://github.com/DigiBP/25DIGIBP4/blob/main/order_to_shipping_as-is_23_05.bpmn
+
 This order-to-shipment is a key supporting process to the company´s core sales process of selling food&beverage machinery including its repair and maintenance parts. the order-to-shipment process involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to fulfill custoemer orders as soon as possible as a main driver behind customer satisfaction.
 
 **Roles involved in the process**:
