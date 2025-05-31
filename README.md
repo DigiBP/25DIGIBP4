@@ -13,13 +13,14 @@
 - Charuta Pande 
 - Devid Montecchiari
 
-# 🎯 Project Goals
+# 📝🚚📦 Introduction
 
-The goal of the assignment is to develop a solution that applies the DigiBP approach to a business process, demonstrating how digital technologies can improve process performance. 
+Our project is a real-life process within a food&beverage machinery manufacturer. 
+
 # 🧩 Challanges of the Process
 
-One of the major challenges are a manual work relative to processing of PO and performing manual checks of goods availability which negatively affects the performance and efficiency. Process relies on manual communication in checking the availability of orderd goods and especially at the point when a goods availability check is performed, customer service team has to inform the relevant colleagues which is dependent on the result (see tasks marked green). 
-Such level of manual coordination leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time losses especially if not followed up immediately. This might ultimately lead to dissatisfaction of customers.  
+One of the major challenges is manual work related to the processing of PO and manual checks of goods availability which negatively affects the performance and efficiency. Process also relies on manual communication when checking the availability of orderd goods eespecially at the point after the goods availability check has been performed by cutomer service who, depending on the outcome of this availability check, inform the relevant colleagues (either Procurement or Dispatch) to carry on with the execution of the process
+Such level of manual back-and-forth communication leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time wastes especially if not followed up immediately by other departments. This might ultimately lead to dissatisfaction of customers. For a breakdown of specific challenges see the below overview. 
 
 - **Fragmented Communication**  
   Coordination between departments depends on manual notifications, leading to delays and errors.
@@ -38,11 +39,14 @@ Such level of manual coordination leads to a substantial amount of time spent on
 
 - **Lack of Workflow Automation**  
   The absence of automated decision-making and notifications leads to unnecessary workload and time losses.
+  
+# 🎯 Goal
 
+Our goal is to transform the current process by introducing a partial automation that will lead to removing a substantial part of the workflow within Customer Service, specifically the need to carry out goods availability check manually.
 
 # 📦 AS-IS Process
 
-This order-to-shipment is a key supporting process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to avoid creating time wastes which might potentially lead to customer disatisfaction.
+This order-to-shipment is a key supporting process to the company´s core sales process of selling food&beverage machinery including its repair and maintenance parts. the order-to-shipment process involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to fulfill custoemer orders as soon as possible as a main driver behind customer satisfaction.
 
 **Roles involved in the process**:
 
