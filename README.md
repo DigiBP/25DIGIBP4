@@ -20,10 +20,20 @@ The goal of the assignment is to develop a solution that applies the DigiBP appr
 # 📦 AS-IS Process
 
 This order-to-shipment is a key supporting process to a sales process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires 
+## Process Description
+
+| Process Step | Description                        | Comments                                                                                                                                                     | Lane                            |
+|--------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| 1            | Receipt and processing of PO       | PO is received by email<br>PO is validated and entered into system manually                                                                                  | Customer Service                |
+| 2            | Goods availability check           | Manual availability check is performed.<br>Order item quantity is checked for availability in Stock database.<br>If order item in stock, CS informs Dispatch to request the preparation of order for shipping.<br>If order item is out of stock, CS informs Procurement to purchase missing components. | Customer Service (green tasks) |
+| 3            | Purchase of missing order items    | Procurement creates a purchase request and when the delivery date is confirmed by the vendor, procurement notifies a planner to plan the production         | Procurement                     |
+| 4            | Planner                            | Create a production order based on the delivery timeline.                                                                                                    | Planner                         |
+| 5            | Missing order items are planned in for production | As soon as the delivery date from vendor is available, Customer Service is notified and informs Dispatch                                         | Customer Service                |
+| 6            | Picking and packing                | Goods are prepared for shipment.                                                                                                                             | Dispatch                        |
 
 ![As-Is Process](As_Is_Process.png)
 
-The Order-to-Cash process begins when a customer places an order via google form with their assigned Customer Service (CS) agent. The CS agent manually opens SAP, fills in the order header, and — when available — uses a reference from a prior quotation to simplify order entry. If no quotation match is found, the agent must manually input all items into SAP. CS agents periodically check order statuses in SAP (without automated alerts) and request dispatch once the order is ready. For orders involving assembly (product type "F"), planners are involved. Throughout the process, CS agents manually track important information (e.g., orders without confirmed shipping dates) in Excel spreadsheets. Communication with customers regarding order status or delays is manual, and customers often inquire directly with CS agents.
+
 
 📹 [Watch the process video Camunda Token](as-is%20Route%201.mp4)
 
