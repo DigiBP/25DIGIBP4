@@ -19,7 +19,7 @@ The goal of the assignment is to develop a solution that applies the DigiBP appr
 
 # 📦 AS-IS Process
 
-This order-to-shipment is a key supporting process to a sales process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to avoid creating time wastes which might potentially lead to customer disatisfaction.
+This order-to-shipment is a key supporting process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to avoid creating time wastes which might potentially lead to customer disatisfaction.
 
 **Roles involved in the process**:
 
