@@ -15,17 +15,18 @@
 
 # 📝🚚📦 Introduction
 
-Our project is a real-life process within a food&beverage machinery manufacturer. 
+Our project is a real-life process within a global food&beverage machinery manufacturer and is a key supporting process to the company´s core sales process of selling food&beverage machinery including its repair and maintenance parts. This order-to-shipment process involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to fulfill custoemer orders as soon as possible as a main driver behind customer satisfaction.
 
 # 🧩 Challanges of the Process
 
-One of the major challenges is manual work related to the processing of PO and manual checks of goods availability which negatively affects the performance and efficiency. Process also relies on manual communication when checking the availability of orderd goods eespecially at the point after the goods availability check has been performed by cutomer service who, depending on the outcome of this availability check, inform the relevant colleagues (either Procurement or Dispatch) to carry on with the execution of the process
-Such level of manual back-and-forth communication leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time wastes especially if not followed up immediately by other departments. This might ultimately lead to dissatisfaction of customers. For a breakdown of specific challenges see the below overview. 
+One of the major challenges is manual work related to the processing of PO and manual checks of goods availability which negatively affects the performance and efficiency. Process also relies on manual communication when checking the availability of orderd goods eespecially at the point when the goods availability check has been performed by cutomer service who, depending on the outcome of this availability check, must inform the relevant colleagues (either Procurement or Dispatch) to carry on with the execution of the process. Such level of manual and back-and-forth communication leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time wastes especially if not followed up immediately by customer service or other departments. This might ultimately lead to dissatisfaction of customers and revenue losses.
 
-- **Fragmented Communication**  
+For a breakdown of specific challenges relative to this process see the below overview. 
+
+- **Fragmented and manual Communication**  
   Coordination between departments depends on manual notifications, leading to delays and errors.
 
-- **Manual Document Preparation**  
+- **Manual goods availability Check**  
   POs are received by email, validated, and entered into the system manually.
 
 - **Inefficient Goods Availability Check**  
@@ -38,11 +39,11 @@ Such level of manual back-and-forth communication leads to a substantial amount 
   Delays often occur when missing goods require procurement and production coordination.
 
 - **Lack of Workflow Automation**  
-  The absence of automated decision-making and notifications leads to unnecessary workload and time losses.
+  The absence of automated decision-making especially in terms of checking the availability of ordered goods leads to unnecessary workload and time losses.
   
 # 🎯 Goal
 
-Our goal is to transform the current process by introducing a partial automation that will lead to removing a substantial part of the workflow within Customer Service, specifically the need to carry out goods availability check manually.
+Our goal is to transform the current process by introducing a partial automation that will lead to removing a substantial part of the workflow within Customer Service, specifically the need to carry out goods availability check manually while reducing the chance of possible human erros. Another improvement is the elimination of manual  coomunication 
 
 # 📦 AS-IS Process
 
@@ -51,14 +52,14 @@ This order-to-shipment is a key supporting process to the company´s core sales 
 **Roles involved in the process**:
 
 **Internal**
-- Customer Service (CS): handles the incoming PO, the availability of ordered goods and informs other process participants of the outcome
+- Customer Service (CS): handles the incoming PO including the check of availability of ordered goods and informs other process participants of the outcome
 - Procurement: involved in procuring ordered items which are out-of-stock
 - Planner: involved in planning the production of out-of-stock items
 - Dispatch: performs warehouse jobs (picking and packing) in preparation to shipping goods
 
 **External**:
 - Customer
-- Vendor (interaction with vendors is not modelled as it´s out of scope of this project)
+- Vendor (interaction with vendors not modelled as it´s out of scope of this project)
   
 ## Process Description
 
