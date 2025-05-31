@@ -48,7 +48,9 @@ Our goal is to transform the current process by introducing a partial automation
 # 📦 AS-IS Process
 * https://github.com/DigiBP/25DIGIBP4/blob/main/order_to_shipping_as-is_23_05.bpmn
 
-This order-to-shipment is a key supporting process to the company´s core sales process of selling food&beverage machinery including its repair and maintenance parts. the order-to-shipment process involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to fulfill custoemer orders as soon as possible as a main driver behind customer satisfaction.
+This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability and (2) preparing goods for shipment. as described, the first part involves several user tasks all of which involve non-automated workflow. (see tasks highlighted in green)
+![As-Is Process](As_Is_Process.png)
+![Alt text](path-or-url "Optional title")
 
 **Roles involved in the process**:
 
@@ -73,7 +75,7 @@ This order-to-shipment is a key supporting process to the company´s core sales 
 | 5            | Missing order items are planned in for production | As soon as the delivery date from vendor is available, Customer Service is notified and informs Dispatch                                         | Customer Service                |
 | 6            | Picking and packing                | Goods are prepared for shipment.                                                                                                                             | Dispatch                        |
 
-![As-Is Process](As_Is_Process.png)
+
 
 
 
