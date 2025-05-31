@@ -50,7 +50,8 @@ Our goal is to transform the current process by introducing a partial automation
 
 This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability and (2) preparing goods for shipment. as described, the first part involves several user tasks all of which involve non-automated workflow. (see tasks highlighted in green). 
 
-https://github.com/DigiBP/25DIGIBP4/blob/main/as-is%20process%20part%201.png
+![As-Is Process Part 1](https://github.com/DigiBP/25DIGIBP4/blob/main/as-is%20process%20part%201.png?raw=true)
+
 
 **Roles involved in the process**:
 
