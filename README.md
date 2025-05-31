@@ -19,7 +19,20 @@ The goal of the assignment is to develop a solution that applies the DigiBP appr
 
 # 📦 AS-IS Process
 
-This order-to-shipment is a key supporting process to a sales process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires 
+This order-to-shipment is a key supporting process to a sales process. It involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to avoid creating time wastes which might potentially lead to customer disatisfaction.
+
+**Roles involved in the process**:
+
+**Internal**
+- Customer Service (CS): handles the incoming PO, the availability of ordered goods and informs other process participants of the outcome
+- Procurement: involved in procuring ordered items which are out-of-stock
+- Planner: involved in planning the production of out-of-stock items
+- Dispatch: performs warehouse jobs (picking and packing) in preparation to shipping goods
+
+**External**:
+- Customer
+- Vendor (interaction with vendors is not modelled as it´s out of scope of this project)
+  
 ## Process Description
 
 | Process Step | Description                        | Comments                                                                                                                                                     | Lane                            |
@@ -37,17 +50,6 @@ This order-to-shipment is a key supporting process to a sales process. It involv
 
 📹 [Watch the process video Camunda Token](as-is%20Route%201.mp4)
 
-**Roles involved into the process**:
-
-Internal
-- Customer Service (CS): handles the incoming PO, the availability of ordered goods and informs other process participants of the outcome
-- Procurement: involved in procuring ordered items which are out-of-stock
-- Planner: involved in planning the production of out-of-stock items
-- Dispatch: performs warehouse jobs (picking and packing) in preparation to shipping goods
-
-External:
-- Client
-- Vendor
 
 # 🧩 Challanges of the Process
 
