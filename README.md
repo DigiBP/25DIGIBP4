@@ -48,9 +48,9 @@ Our goal is to transform the current process by introducing a partial automation
 # 📦 AS-IS Process
 * https://github.com/DigiBP/25DIGIBP4/blob/main/order_to_shipping_as-is_23_05.bpmn
 
-This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability and (2) preparing goods for shipment. as described, the first part involves several user tasks all of which involve non-automated workflow. (see tasks highlighted in green)
-![As-Is Process](As_Is_Process.png)
-![Alt text](path-or-url "Optional title")
+This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability and (2) preparing goods for shipment. as described, the first part involves several user tasks all of which involve non-automated workflow. (see tasks highlighted in green). 
+
+https://github.com/DigiBP/25DIGIBP4/blob/main/as-is%20process%20part%201.png
 
 **Roles involved in the process**:
 
