@@ -96,7 +96,7 @@ Technologies Used
 | BPMN 2.0       |Used Modeling-Language            |
 | DMN         |     see Make        |
 | Google Form      |        |
-| Google Sheet     |Serves as a database collecting incoming orders as well as an inventory database |
+| Google Sheet     |Serves as a database collecting incoming POs as well as an inventory database in which ordered items are checked for availability |
 | Post             | 
 | Make                |
 | Voiceflow             |Used to design and deploy the conversational interface
