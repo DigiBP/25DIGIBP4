@@ -16,6 +16,29 @@
 # 🎯 Project Goals
 
 The goal of the assignment is to develop a solution that applies the DigiBP approach to a business process, demonstrating how digital technologies can improve process performance. 
+# 🧩 Challanges of the Process
+
+One of the major challenges are a manual work relative to processing of PO and performing manual checks of goods availability which negatively affects the performance and efficiency. Process relies on manual communication in checking the availability of orderd goods and especially at the point when a goods availability check is performed, customer service team has to inform the relevant colleagues which is dependent on the result (see tasks marked green). 
+Such level of manual coordination leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time losses especially if not followed up immediately. This might ultimately lead to dissatisfaction of customers.  
+
+- **Fragmented Communication**  
+  Coordination between departments depends on manual notifications, leading to delays and errors.
+
+- **Manual Document Preparation**  
+  POs are received by email, validated, and entered into the system manually.
+
+- **Inefficient Goods Availability Check**  
+  Manual stock checks are performed, and customer service must inform other departments accordingly.
+
+- **Inefficient Follow-Up**  
+  Manual follow-ups are time-consuming and prone to being overlooked.
+
+- **Process Bottlenecks**  
+  Delays often occur when missing goods require procurement and production coordination.
+
+- **Lack of Workflow Automation**  
+  The absence of automated decision-making and notifications leads to unnecessary workload and time losses.
+
 
 # 📦 AS-IS Process
 
@@ -51,28 +74,6 @@ This order-to-shipment is a key supporting process. It involves 4 departments an
 📹 [Watch the process video Camunda Token](as-is%20Route%201.mp4)
 
 
-# 🧩 Challanges of the Process
-
-One of the major challenges are a manual work relative to processing of PO and performing manual checks of goods availability which negatively affects the performance and efficiency. Process relies on manual communication in checking the availability of orderd goods and especially at the point when a goods availability check is performed, customer service team has to inform the relevant colleagues which is dependent on the result (see tasks marked green). 
-Such level of manual coordination leads to a substantial amount of time spent on iterative and tidious messaging and ultimately generates time losses especially if not followed up immediately. This might ultimately lead to dissatisfaction of customers.  
-
-- **Fragmented Communication**  
-  Coordination between departments depends on manual notifications, leading to delays and errors.
-
-- **Manual Document Preparation**  
-  POs are received by email, validated, and entered into the system manually.
-
-- **Inefficient Goods Availability Check**  
-  Manual stock checks are performed, and customer service must inform other departments accordingly.
-
-- **Inefficient Follow-Up**  
-  Manual follow-ups are time-consuming and prone to being overlooked.
-
-- **Process Bottlenecks**  
-  Delays often occur when missing goods require procurement and production coordination.
-
-- **Lack of Workflow Automation**  
-  The absence of automated decision-making and notifications leads to unnecessary workload and time losses.
 
   
 # TO-BE Process
