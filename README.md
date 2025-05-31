@@ -94,9 +94,9 @@ Technologies Used
 |-------------------------|----------------------------------------------|
 | Camunda 7            |Modeling the business process |
 | BPMN 2.0       |Used Modeling-Language            |
-| DMN         |             |
+| DMN         |     see Make        |
 | Google Form      |        |
-| Google Sheet     |As database for testing simulated orders|
+| Google Sheet     |Serves as a database collecting incoming orders as well as an inventory database |
 | Post             | 
 | Make                |
 | Voiceflow             |Used to design and deploy the conversational interface
