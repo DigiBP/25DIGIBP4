@@ -83,15 +83,10 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 🎥 [As-Is Route 1 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/Route%20Videos/as-is%20Route%201.mp4)
 🎥 [As-Is Route 2 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/Route%20Videos/as-is%20Route%202.mp4)
 
-
-
-
   
 # TO-BE Process
 
-![To-be Process](Pictures/As_is_process.png)
-
-Technologies Used
+To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
 
 | Component                    | Purpose                                        |
 |-------------------------|----------------------------------------------|
@@ -101,6 +96,8 @@ Technologies Used
 | Post                 | 
 | Voiceflow             |Used to design and deploy the conversational interface|
 
+- **Fragmented and manual Communication**  
+  Coordination between departments depends on manual notifications, leading to delays and errors.
 
 # Google Form 
 Our Order to Ship process starts when an order is entered into the Google form (note: the process can not be started manually in Camunda Engine! – which is as expected). As soon as the order has been submitted via google form, the tasks appear in Camunda Engine and may then be completed.
@@ -111,6 +108,8 @@ Response Sheet: https://docs.google.com/spreadsheets/d/1gB6kCeueMDYXXfVU8TTvKkFg
 Inventory Sheet: https://docs.google.com/spreadsheets/d/1YS6Ev_YT5LyQp5M6MQcl2YjBbLnjlQEp5IqUemB4uAU/edit?gid=0#gid=0 
 
 # Make Scenario 1
+
+To eliminate manual tasks, increase efficienty and to incorporate workflow automation and automated decision making the first Make Scenario offers a reliable solution:
 
 ![Receive Order & Inventory Check](Pictures/Make_scenario_receiveOrder_inventoryCheck.png)
 
@@ -138,7 +137,7 @@ To create the Scenario, the following Modules have been used:
 | HTTP Module | Camunda Integration | https://digibp.engine.martinlab.science/engine-rest/process-definition/key/Process_0ad1ggy/tenant-id/25DIGIBP29/start |
 
 Example of the auotmated messages created:
-![Order Confirmation](Pictures/GMail_module.png)
+![Order Confirmation](Pictures/Gmail_module.png)
 ![Thank You Mail](Pictures/Thank_you_mail.png)
 
 ![GMail Module](Pictures/GMail_module_description.png)
@@ -172,6 +171,8 @@ As soon as the vendor replies with a confirmation via email, Postman Triggers to
 3. If stock is not available, Camunda waits for delivery confirmation (message event).
 4. Vendor receives email → sends delivery date manually
 5. Professor triggers message via Postman (token continues in Camunda)
+
+![To-be Process](Pictures/As_is_process.png)
 
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
