@@ -96,24 +96,55 @@ Technologies Used
 |-------------------------|----------------------------------------------|
 | Camunda 7            |Modeling the business process |
 | BPMN 2.0       |Used Modeling-Language            |
-| DMN         |     see Make        |
-| Google Form      |        |
-| Google Sheet     |Serves as a database collecting incoming POs as well as an inventory database in which ordered items are checked for availability |
-| Post             | 
-| Make                |
-| Voiceflow             |Used to design and deploy the conversational interface
+| Make                |Used to automate tasks using different Modules |
+| Voiceflow             |Used to design and deploy the conversational interface|
 
 
-# Google Form
-https://docs.google.com/forms/d/e/1FAIpQLSfrZuLGhWxTEj_86DGCYEw97wCztB8QaVXKZe03wEM6Rq_qEA/viewform
+# Google Form 
+Our Order to Ship process starts when an order is entered into the Google form (note: the process can not be started manually in Camunda Engine! – which is as expected). As soon as the order has been submitted via google form, the tasks appear in Camunda Engine and may then be completed.
 
+**Links**:
+Google Form: https://docs.google.com/forms/d/e/1FAIpQLSeRJk72AsnS4mkPVHtKpz_k9PAM2kjObPrT1Gb0I1208mLp5A/viewform 
+Response Sheet: https://docs.google.com/spreadsheets/d/1gB6kCeueMDYXXfVU8TTvKkFgIYxz8RYR0I0wL8L1RyQ/edit?usp=sharing 
+Inventory Sheet: https://docs.google.com/spreadsheets/d/1YS6Ev_YT5LyQp5M6MQcl2YjBbLnjlQEp5IqUemB4uAU/edit?gid=0#gid=0 
 
-# Make Scenarios
+# Make Scenario 1
 
+![Receive Order & Inventory Check](https://github.com/DigiBP/25DIGIBP4/blob/main/Make_scenario_stockcheck.png?raw=true)
 
+The created Make Scenario automates all user tasks (below in green) from customer service and is able to make manual user tasks obsolet.
+It takes over the following tasks:
 
-# Email Notification
+-	Retrieve/check PO from an email
+-	enter PO data into the system manually
+-	perform Goods Availability check 
+-	request goods shipment with Dispatch
+AND
+-	contact procurement to backorder and out of stock item
+  
+![Obsolet manual tasks](https://github.com/DigiBP/25DIGIBP4/blob/main/Obsolet_manual_tasks.png?raw=true)
 
+To create the Scenario, the following Modules have been used.
+
+## Google Sheets
+
+Watch Rows
+
+| Module                    | Purpose                                        | Description |
+|-------------------------|----------------------------------------------|------------------|
+| Google Sheets          |Watch Rows |Triggers with each new order and starts Camunda Process once an order is entered via Google form
+| Google Sheets      |Search Rows           |Checks inventory based on Product ID|
+| Router         |    Checks if stock is available or not         |Will direct to the corresponding route |
+| Update a Row     | Updates Order Status in Google Sheets  |Shows that the order is either with Dispatch or Procurement |
+| Gmail |Send Email     |Sends either a "thank you for your order" email or a notification that the item is currently out of stock and delivery will take longer as it will be re-ordered |
+| HTTP Module | Camunda Integration | https://digibp.engine.martinlab.science/engine-rest/process-definition/key/Process_0ad1ggy/tenant-id/25DIGIBP29/start |
+
+# Make Scenario 2
+
+![Service Task: Send PO to vendor](https://github.com/DigiBP/25DIGIBP4/blob/main/Make_scenario_send_PO_to_vendor.png?raw=true)
+
+The second Make Scenario has been created  to replace the
+Triggered after User Task Create Purchase Request (when stock is unavailable). Sends purchase order to vendor via an email and
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
