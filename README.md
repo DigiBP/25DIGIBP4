@@ -1,6 +1,6 @@
-# Team 25DIGIBP4: transforming an order-to-shipment process in an F&B machinery industry
+# 🤝 Team 25DIGIBP4: transforming an order-to-shipment process in an F&B machinery industry
 
-# Team Members
+# 🧑‍🔧 Team Members
 
 | Name                    | Email                                        |
 |-------------------------|----------------------------------------------|
@@ -9,7 +9,7 @@
 | Patricia Abel           | patricia.abel@students.fhnw.ch               |
 | Ramona Steinauer        | ramona.steinauer@students.fhnw.ch	         |
 
-# Coaches
+# 💡🧠 Coaches
 
 - Andreas Martin
 - Charuta Pande 
