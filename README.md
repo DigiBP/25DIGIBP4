@@ -35,14 +35,14 @@ For a breakdown of specific challenges relative to this process see the below ov
 - **Lack of Workflow Automation**  
   The absence of automated decision-making especially in terms of checking the availability of ordered goods leads to unnecessary workload and time losses.
   
-# 🎯 Goal
+# 🎯 Goal and Vision
 
-Our goal is to transform the current process by introducing a partial automation that will lead to removing a substantial part of the workflow within Customer Service, specifically the need to carry out goods availability check manually while reducing the chance of possible human erros. Another improvement is the elimination of manual  coomunication 
+Our goal is to transform the current process by introducing a partial automation that will lead to removing a substantial part of the workflow within Customer Service, specifically the need to carry out goods availability check manually while reducing the chance of possible human erros. By achieving this partial automation, we will save time for parties involved that can be dedicated on continuos improvement elsewhere. Our Vision is not not only deliver a partial automation but also improve customer experience by introducing a way for customers to check the order status or ask for instructions on how to place and order. 
 
 # 📦 AS-IS Process
 * https://github.com/DigiBP/25DIGIBP4/blob/main/order_to_shipping_as-is_23_05.bpmn
 
-This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability and (2) preparing goods for shipment. as described, the first part involves several user tasks all of which involve non-automated workflow. (see tasks highlighted in green). 
+This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability (see tasks highlighted in green) and (2) preparing goods for shipment. The first part involves several user tasks within customer service all of which involve non-automated workflow and manual communication. First, an incoming PO is processed by 
 
 ![As-Is Process Part 1](https://github.com/DigiBP/25DIGIBP4/blob/main/as-is%20process%20part%201.png?raw=true)
 
@@ -69,7 +69,7 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 | 4            | Planner                            | Create a production order based on the delivery timeline.                                                                                                    | Planner                         |
 | 5            | Missing order items are planned in for production | As soon as the delivery date from vendor is available, Customer Service is notified and informs Dispatch                                         | Customer Service                |
 | 6            | Picking and packing                | Goods are prepared for shipment.                                                                                                                             | Dispatch                        |
-
+**Overview of full as-is process**
 ![As-Is Process](https://github.com/DigiBP/25DIGIBP4/blob/main/As_Is_Process.png?raw=true)
 
 
@@ -82,16 +82,7 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
   
 # TO-BE Process
 
-As the company grows, we seek to **reduce the amount of user tasks and manual work** needed to perform them especially the goods availability check. By achieving this partial automation, we will save time for parties invovled that can be dedicated on continuos improvement elsewhere. Our process solution will introduce a pratial automation eliminating the need to check goods manually while also reducing manual communication.
 
-Our Vision is not not only deliver a partial automation but also improve customer experience with the improved process.
-
-We aim to:
-
-- Reduce manual tasks
-- Improve customer experience
-- Save time for the customer service team
-- Enable the team to focus on continuous improvement
 
 Technologies Used
 
