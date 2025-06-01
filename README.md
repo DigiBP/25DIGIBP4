@@ -1,4 +1,4 @@
-# 🤝 Team 25DIGIBP4: transforming an order-to-shipment process in an F&B machinery industry
+# 🤝 Team 25DIGIBP4: transforming an order-to-shipment process in customer service within F&B machinery industry
 
 # 🧑‍🔧 Team Members
 
