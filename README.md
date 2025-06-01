@@ -61,7 +61,8 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 - Customer
 - Vendor (interaction with vendors not modelled as it´s out of scope of this project)
   
-## Process Description
+## 📋 Process Description
+
 
 | Process Step | Description                        | Comments                                                                                                                                                     | Lane                            |
 |--------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
