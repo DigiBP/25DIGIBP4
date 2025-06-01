@@ -1,8 +1,8 @@
 {
-    "name": "Stockcheck",
+    "name": "InventoryCheck",
     "flow": [
         {
-            "id": 30,
+            "id": 1,
             "module": "google-sheets:watchRows",
             "version": 2,
             "parameters": {
@@ -11,7 +11,7 @@
                 "limit": 2,
                 "sheetId": "Form Responses 1",
                 "__IMTCONN__": 8353266,
-                "spreadsheetId": "/1ai8-J37o_HD6zJmaYX6EvDK7HEN4afds/1F4euTQQqm2BBiwSfURLx2f_0Zs9Y8egAniVHi6joaLA",
+                "spreadsheetId": "/1ai8-J37o_HD6zJmaYX6EvDK7HEN4afds/1gB6kCeueMDYXXfVU8TTvKkFgIYxz8RYR0I0wL8L1RyQ",
                 "tableFirstRow": "A1:Z1",
                 "includesHeaders": true,
                 "valueRenderOption": "FORMATTED_VALUE",
@@ -20,9 +20,9 @@
             "mapper": {},
             "metadata": {
                 "designer": {
-                    "x": 1,
-                    "y": 148,
-                    "name": "Trigger at new order"
+                    "x": -615,
+                    "y": -56,
+                    "name": "Trigger at new order/row"
                 },
                 "restore": {
                     "parameters": {
@@ -45,7 +45,7 @@
                         "spreadsheetId": {
                             "path": [
                                 "Make Scenario",
-                                "Purchase Order (Responses)"
+                                "Purchase Order (NEW Responses)"
                             ]
                         },
                         "includesHeaders": {
@@ -304,7 +304,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 2,
             "module": "google-sheets:filterRows",
             "version": 2,
             "parameters": {
@@ -312,28 +312,27 @@
             },
             "mapper": {
                 "from": "drive",
-                "limit": "1",
                 "filter": [
                     [
                         {
                             "a": "A",
-                            "b": "{{30.`2`}}",
-                            "o": "number:equal"
+                            "b": "{{1.`2`}}",
+                            "o": "text:equal"
                         }
                     ]
                 ],
                 "sheetId": "Inventory",
                 "sortOrder": "asc",
                 "spreadsheetId": "1YS6Ev_YT5LyQp5M6MQcl2YjBbLnjlQEp5IqUemB4uAU",
-                "tableFirstRow": "A1:Z1",
+                "tableFirstRow": "A1:CZ1",
                 "includesHeaders": true,
                 "valueRenderOption": "FORMATTED_VALUE",
                 "dateTimeRenderOption": "FORMATTED_STRING"
             },
             "metadata": {
                 "designer": {
-                    "x": 309,
-                    "y": 152,
+                    "x": -327,
+                    "y": -52,
                     "name": "Check Inventory"
                 },
                 "restore": {
@@ -342,7 +341,8 @@
                             "label": "Select from My Drive"
                         },
                         "orderBy": {
-                            "mode": "chose"
+                            "mode": "chose",
+                            "label": "Empty"
                         },
                         "sheetId": {
                             "mode": "chose",
@@ -354,10 +354,10 @@
                         },
                         "spreadsheetId": {
                             "mode": "chose",
-                            "label": "Purchase Order & Inventory"
+                            "label": "Inventory"
                         },
                         "tableFirstRow": {
-                            "label": "A-Z"
+                            "label": "A-CZ"
                         },
                         "includesHeaders": {
                             "mode": "chose",
@@ -655,26 +655,416 @@
                         "name": "25",
                         "type": "text",
                         "label": "(Z)"
+                    },
+                    {
+                        "name": "26",
+                        "type": "text",
+                        "label": "(AA)"
+                    },
+                    {
+                        "name": "27",
+                        "type": "text",
+                        "label": "(AB)"
+                    },
+                    {
+                        "name": "28",
+                        "type": "text",
+                        "label": "(AC)"
+                    },
+                    {
+                        "name": "29",
+                        "type": "text",
+                        "label": "(AD)"
+                    },
+                    {
+                        "name": "30",
+                        "type": "text",
+                        "label": "(AE)"
+                    },
+                    {
+                        "name": "31",
+                        "type": "text",
+                        "label": "(AF)"
+                    },
+                    {
+                        "name": "32",
+                        "type": "text",
+                        "label": "(AG)"
+                    },
+                    {
+                        "name": "33",
+                        "type": "text",
+                        "label": "(AH)"
+                    },
+                    {
+                        "name": "34",
+                        "type": "text",
+                        "label": "(AI)"
+                    },
+                    {
+                        "name": "35",
+                        "type": "text",
+                        "label": "(AJ)"
+                    },
+                    {
+                        "name": "36",
+                        "type": "text",
+                        "label": "(AK)"
+                    },
+                    {
+                        "name": "37",
+                        "type": "text",
+                        "label": "(AL)"
+                    },
+                    {
+                        "name": "38",
+                        "type": "text",
+                        "label": "(AM)"
+                    },
+                    {
+                        "name": "39",
+                        "type": "text",
+                        "label": "(AN)"
+                    },
+                    {
+                        "name": "40",
+                        "type": "text",
+                        "label": "(AO)"
+                    },
+                    {
+                        "name": "41",
+                        "type": "text",
+                        "label": "(AP)"
+                    },
+                    {
+                        "name": "42",
+                        "type": "text",
+                        "label": "(AQ)"
+                    },
+                    {
+                        "name": "43",
+                        "type": "text",
+                        "label": "(AR)"
+                    },
+                    {
+                        "name": "44",
+                        "type": "text",
+                        "label": "(AS)"
+                    },
+                    {
+                        "name": "45",
+                        "type": "text",
+                        "label": "(AT)"
+                    },
+                    {
+                        "name": "46",
+                        "type": "text",
+                        "label": "(AU)"
+                    },
+                    {
+                        "name": "47",
+                        "type": "text",
+                        "label": "(AV)"
+                    },
+                    {
+                        "name": "48",
+                        "type": "text",
+                        "label": "(AW)"
+                    },
+                    {
+                        "name": "49",
+                        "type": "text",
+                        "label": "(AX)"
+                    },
+                    {
+                        "name": "50",
+                        "type": "text",
+                        "label": "(AY)"
+                    },
+                    {
+                        "name": "51",
+                        "type": "text",
+                        "label": "(AZ)"
+                    },
+                    {
+                        "name": "52",
+                        "type": "text",
+                        "label": "(BA)"
+                    },
+                    {
+                        "name": "53",
+                        "type": "text",
+                        "label": "(BB)"
+                    },
+                    {
+                        "name": "54",
+                        "type": "text",
+                        "label": "(BC)"
+                    },
+                    {
+                        "name": "55",
+                        "type": "text",
+                        "label": "(BD)"
+                    },
+                    {
+                        "name": "56",
+                        "type": "text",
+                        "label": "(BE)"
+                    },
+                    {
+                        "name": "57",
+                        "type": "text",
+                        "label": "(BF)"
+                    },
+                    {
+                        "name": "58",
+                        "type": "text",
+                        "label": "(BG)"
+                    },
+                    {
+                        "name": "59",
+                        "type": "text",
+                        "label": "(BH)"
+                    },
+                    {
+                        "name": "60",
+                        "type": "text",
+                        "label": "(BI)"
+                    },
+                    {
+                        "name": "61",
+                        "type": "text",
+                        "label": "(BJ)"
+                    },
+                    {
+                        "name": "62",
+                        "type": "text",
+                        "label": "(BK)"
+                    },
+                    {
+                        "name": "63",
+                        "type": "text",
+                        "label": "(BL)"
+                    },
+                    {
+                        "name": "64",
+                        "type": "text",
+                        "label": "(BM)"
+                    },
+                    {
+                        "name": "65",
+                        "type": "text",
+                        "label": "(BN)"
+                    },
+                    {
+                        "name": "66",
+                        "type": "text",
+                        "label": "(BO)"
+                    },
+                    {
+                        "name": "67",
+                        "type": "text",
+                        "label": "(BP)"
+                    },
+                    {
+                        "name": "68",
+                        "type": "text",
+                        "label": "(BQ)"
+                    },
+                    {
+                        "name": "69",
+                        "type": "text",
+                        "label": "(BR)"
+                    },
+                    {
+                        "name": "70",
+                        "type": "text",
+                        "label": "(BS)"
+                    },
+                    {
+                        "name": "71",
+                        "type": "text",
+                        "label": "(BT)"
+                    },
+                    {
+                        "name": "72",
+                        "type": "text",
+                        "label": "(BU)"
+                    },
+                    {
+                        "name": "73",
+                        "type": "text",
+                        "label": "(BV)"
+                    },
+                    {
+                        "name": "74",
+                        "type": "text",
+                        "label": "(BW)"
+                    },
+                    {
+                        "name": "75",
+                        "type": "text",
+                        "label": "(BX)"
+                    },
+                    {
+                        "name": "76",
+                        "type": "text",
+                        "label": "(BY)"
+                    },
+                    {
+                        "name": "77",
+                        "type": "text",
+                        "label": "(BZ)"
+                    },
+                    {
+                        "name": "78",
+                        "type": "text",
+                        "label": "(CA)"
+                    },
+                    {
+                        "name": "79",
+                        "type": "text",
+                        "label": "(CB)"
+                    },
+                    {
+                        "name": "80",
+                        "type": "text",
+                        "label": "(CC)"
+                    },
+                    {
+                        "name": "81",
+                        "type": "text",
+                        "label": "(CD)"
+                    },
+                    {
+                        "name": "82",
+                        "type": "text",
+                        "label": "(CE)"
+                    },
+                    {
+                        "name": "83",
+                        "type": "text",
+                        "label": "(CF)"
+                    },
+                    {
+                        "name": "84",
+                        "type": "text",
+                        "label": "(CG)"
+                    },
+                    {
+                        "name": "85",
+                        "type": "text",
+                        "label": "(CH)"
+                    },
+                    {
+                        "name": "86",
+                        "type": "text",
+                        "label": "(CI)"
+                    },
+                    {
+                        "name": "87",
+                        "type": "text",
+                        "label": "(CJ)"
+                    },
+                    {
+                        "name": "88",
+                        "type": "text",
+                        "label": "(CK)"
+                    },
+                    {
+                        "name": "89",
+                        "type": "text",
+                        "label": "(CL)"
+                    },
+                    {
+                        "name": "90",
+                        "type": "text",
+                        "label": "(CM)"
+                    },
+                    {
+                        "name": "91",
+                        "type": "text",
+                        "label": "(CN)"
+                    },
+                    {
+                        "name": "92",
+                        "type": "text",
+                        "label": "(CO)"
+                    },
+                    {
+                        "name": "93",
+                        "type": "text",
+                        "label": "(CP)"
+                    },
+                    {
+                        "name": "94",
+                        "type": "text",
+                        "label": "(CQ)"
+                    },
+                    {
+                        "name": "95",
+                        "type": "text",
+                        "label": "(CR)"
+                    },
+                    {
+                        "name": "96",
+                        "type": "text",
+                        "label": "(CS)"
+                    },
+                    {
+                        "name": "97",
+                        "type": "text",
+                        "label": "(CT)"
+                    },
+                    {
+                        "name": "98",
+                        "type": "text",
+                        "label": "(CU)"
+                    },
+                    {
+                        "name": "99",
+                        "type": "text",
+                        "label": "(CV)"
+                    },
+                    {
+                        "name": "100",
+                        "type": "text",
+                        "label": "(CW)"
+                    },
+                    {
+                        "name": "101",
+                        "type": "text",
+                        "label": "(CX)"
+                    },
+                    {
+                        "name": "102",
+                        "type": "text",
+                        "label": "(CY)"
+                    },
+                    {
+                        "name": "103",
+                        "type": "text",
+                        "label": "(CZ)"
                     }
                 ]
             }
         },
         {
-            "id": 7,
+            "id": 3,
             "module": "builtin:BasicRouter",
             "version": 1,
             "mapper": null,
             "metadata": {
                 "designer": {
-                    "x": 600,
-                    "y": 150
+                    "x": -28,
+                    "y": -51
                 }
             },
             "routes": [
                 {
                     "flow": [
                         {
-                            "id": 8,
+                            "id": 4,
                             "module": "google-sheets:updateRow",
                             "version": 2,
                             "parameters": {
@@ -685,8 +1075,8 @@
                                 "conditions": [
                                     [
                                         {
-                                            "a": "{{6.`2`}}",
-                                            "b": "{{30.`4`}}",
+                                            "a": "{{2.`2`}}",
+                                            "b": "{{1.`4`}}",
                                             "o": "number:greaterorequal"
                                         }
                                     ]
@@ -696,19 +1086,19 @@
                                 "from": "drive",
                                 "mode": "select",
                                 "values": {
-                                    "8": "Picking & Packing"
+                                    "8": "Dispatch - Fetch & Validate Order Details"
                                 },
-                                "sheetId": "Orders",
-                                "rowNumber": "{{6.`__ROW_NUMBER__`}}",
-                                "spreadsheetId": "/1ai8-J37o_HD6zJmaYX6EvDK7HEN4afds/1YS6Ev_YT5LyQp5M6MQcl2YjBbLnjlQEp5IqUemB4uAU",
+                                "sheetId": "Form Responses 1",
+                                "rowNumber": "{{1.`__ROW_NUMBER__`}}",
+                                "spreadsheetId": "/1ai8-J37o_HD6zJmaYX6EvDK7HEN4afds/1gB6kCeueMDYXXfVU8TTvKkFgIYxz8RYR0I0wL8L1RyQ",
                                 "includesHeaders": true,
                                 "valueInputOption": "USER_ENTERED"
                             },
                             "metadata": {
                                 "designer": {
-                                    "x": 959,
-                                    "y": -7,
-                                    "name": "Update Order Status to Picking & Packing"
+                                    "x": 341,
+                                    "y": -202,
+                                    "name": "Dispatch - Fetch & Validate Order Details"
                                 },
                                 "restore": {
                                     "expect": {
@@ -719,12 +1109,12 @@
                                             "label": "Search by path"
                                         },
                                         "sheetId": {
-                                            "label": "Orders"
+                                            "label": "Form Responses 1"
                                         },
                                         "spreadsheetId": {
                                             "path": [
                                                 "Make Scenario",
-                                                "Purchase Order & Inventory"
+                                                "Purchase Order (NEW Responses)"
                                             ]
                                         },
                                         "includesHeaders": {
@@ -987,38 +1377,11 @@
                                         "type": "collection",
                                         "label": "Values"
                                     }
-                                ],
-                                "interface": [
-                                    {
-                                        "name": "spreadsheetId",
-                                        "type": "text",
-                                        "label": "Spreadsheet ID"
-                                    },
-                                    {
-                                        "name": "updatedRange",
-                                        "type": "text",
-                                        "label": "Updated range"
-                                    },
-                                    {
-                                        "name": "updatedRows",
-                                        "type": "text",
-                                        "label": "Updated rows"
-                                    },
-                                    {
-                                        "name": "updatedColumns",
-                                        "type": "text",
-                                        "label": "Updated columns"
-                                    },
-                                    {
-                                        "name": "updatedCells",
-                                        "type": "text",
-                                        "label": "Updated cells"
-                                    }
                                 ]
                             }
                         },
                         {
-                            "id": 26,
+                            "id": 6,
                             "module": "google-email:ActionSendEmail",
                             "version": 2,
                             "parameters": {
@@ -1027,19 +1390,19 @@
                             "mapper": {
                                 "cc": [],
                                 "to": [
-                                    "{{30.`7`}}"
+                                    "{{1.`7`}}"
                                 ],
                                 "bcc": [],
                                 "from": "",
-                                "html": "dear {{30.`5`}}",
-                                "subject": "Thanks for your order - {{30.`1`}}",
+                                "html": "<p>Dear {{1.`5`}},\n\n<p><strong>Thank you for placing your order!</strong></p> \n\n<p>It is being prepared and will be with you in approximately 2 weeks.</p>\n\n<p>In case of any questions please do not hesitate to contact us.</p>\n\n<p>Kind Regards,<br>Your Company</p>",
+                                "subject": "Thanks for your order - {{1.`1`}}",
                                 "attachments": []
                             },
                             "metadata": {
                                 "designer": {
-                                    "x": 1285,
-                                    "y": -9,
-                                    "name": "Email - thanks for order"
+                                    "x": 641,
+                                    "y": -202,
+                                    "name": "Thanks for your Order"
                                 },
                                 "restore": {
                                     "expect": {
@@ -1151,18 +1514,11 @@
                                         "type": "array",
                                         "label": "Blind copy recipient"
                                     }
-                                ],
-                                "interface": [
-                                    {
-                                        "name": "messageId",
-                                        "type": "text",
-                                        "label": "Message ID"
-                                    }
                                 ]
                             }
                         },
                         {
-                            "id": 28,
+                            "id": 8,
                             "module": "http:ActionSendData",
                             "version": 3,
                             "parameters": {
@@ -1173,13 +1529,13 @@
                                 "ca": "",
                                 "qs": [],
                                 "url": "https://digibp.engine.martinlab.science/engine-rest/process-definition/key/Process_0ad1ggy/tenant-id/25DIGIBP29/start",
-                                "data": "{\n      \"variables\": {\n        \"status\" : {\n          \"value\" : \"available\",\n          \"type\": \"String\"\n        },\n        \"orderId\" : {\n          \"value\" : {{30.`1`}},\n          \"type\": \"Integer\"\n        },\n  \"quantity\" : {\n          \"value\" : {{30.`4`}},\n          \"type\": \"Integer\"\n         },\n   \"productId\" : {\n          \"value\" : {{30.`2`}},\n          \"type\": \"Integer\"\n     },\n   \"orderShipped\" : {\n          \"value\" : {{30.`1`}},\n          \"type\": \"Integer\"\n         }\n      }\n    }",
+                                "data": "{\n      \"variables\": {\n        \"status\" : {\n          \"value\" : \"available\",\n          \"type\": \"String\"\n        },\n        \"orderId\" : {\n          \"value\" : {{1.`1`}},\n          \"type\": \"Integer\"\n        },\n  \"quantity\" : {\n          \"value\" : {{1.`4`}},\n          \"type\": \"Integer\"\n         },\n   \"productId\" : {\n          \"value\" : {{1.`2`}},\n          \"type\": \"Integer\"\n     },\n   \"orderShipped\" : {\n          \"value\" : {{1.`1`}},\n          \"type\": \"Integer\"\n         }\n      }\n    }",
                                 "gzip": true,
                                 "method": "post",
                                 "headers": [
                                     {
                                         "name": "Content-Type",
-                                        "value": "application/json "
+                                        "value": "application/json"
                                     }
                                 ],
                                 "timeout": "",
@@ -1198,8 +1554,8 @@
                             },
                             "metadata": {
                                 "designer": {
-                                    "x": 1600,
-                                    "y": -7
+                                    "x": 941,
+                                    "y": -202
                                 },
                                 "restore": {
                                     "expect": {
@@ -1406,42 +1762,7 @@
                                         "label": "Follow all redirect",
                                         "required": true
                                     }
-                                ],
-                                "interface": [
-                                    {
-                                        "name": "headers",
-                                        "spec": [
-                                            {
-                                                "name": "name",
-                                                "type": "text",
-                                                "label": "Name"
-                                            },
-                                            {
-                                                "name": "value",
-                                                "type": "text",
-                                                "label": "Value"
-                                            }
-                                        ],
-                                        "type": "array",
-                                        "label": "Headers"
-                                    },
-                                    {
-                                        "name": "cookieHeaders",
-                                        "type": "array",
-                                        "label": "Cookie headers"
-                                    },
-                                    {
-                                        "name": "statusCode",
-                                        "type": "number",
-                                        "label": "Status code"
-                                    },
-                                    {
-                                        "name": "data",
-                                        "type": "any",
-                                        "label": "Data"
-                                    }
-                                ],
-                                "advanced": true
+                                ]
                             }
                         }
                     ]
@@ -1449,185 +1770,41 @@
                 {
                     "flow": [
                         {
-                            "id": 11,
-                            "module": "google-email:ActionSendEmail",
+                            "id": 5,
+                            "module": "google-sheets:updateRow",
                             "version": 2,
                             "parameters": {
-                                "account": 8566231
+                                "__IMTCONN__": 8353266
                             },
                             "filter": {
                                 "name": "Inventory Not Available",
                                 "conditions": [
                                     [
                                         {
-                                            "a": "{{6.`2`}}",
-                                            "b": "{{30.`4`}}",
+                                            "a": "{{2.`2`}}",
+                                            "b": "{{1.`4`}}",
                                             "o": "number:less"
                                         }
                                     ]
                                 ]
                             },
                             "mapper": {
-                                "cc": [],
-                                "to": [
-                                    "{{30.`7`}}"
-                                ],
-                                "bcc": [],
-                                "from": "",
-                                "html": "Dear {{30.`5`}},\n\nYour order {{30.`1`}} for {{30.`4`}} units of {{30.`3`}} is on backorder as we out out of stock or have limited availability.\n\nYour order will be ready for shipment in approximately 4 week.\n\nIf you have any questions please get in touch with our customer support team.\n\nThank you,\nYour Company",
-                                "subject": "Order {{30.`1`}} - Backorder Notification",
-                                "attachments": []
-                            },
-                            "metadata": {
-                                "designer": {
-                                    "x": 962,
-                                    "y": 325,
-                                    "name": "Email - Backordered"
-                                },
-                                "restore": {
-                                    "expect": {
-                                        "cc": {
-                                            "mode": "chose"
-                                        },
-                                        "to": {
-                                            "mode": "chose",
-                                            "items": [
-                                                null
-                                            ]
-                                        },
-                                        "bcc": {
-                                            "mode": "chose"
-                                        },
-                                        "attachments": {
-                                            "mode": "chose"
-                                        }
-                                    },
-                                    "parameters": {
-                                        "account": {
-                                            "data": {
-                                                "scoped": "true",
-                                                "connection": "google-restricted"
-                                            },
-                                            "label": "Send email to resubmit order (ellonatest9@gmail.com)"
-                                        }
-                                    }
-                                },
-                                "parameters": [
-                                    {
-                                        "name": "account",
-                                        "type": "account:google-restricted",
-                                        "label": "Connection",
-                                        "required": true
-                                    }
-                                ],
-                                "expect": [
-                                    {
-                                        "name": "from",
-                                        "type": "text",
-                                        "label": "From"
-                                    },
-                                    {
-                                        "name": "to",
-                                        "spec": {
-                                            "name": "value",
-                                            "type": "email",
-                                            "label": "Email address",
-                                            "required": true
-                                        },
-                                        "type": "array",
-                                        "label": "To",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "subject",
-                                        "type": "text",
-                                        "label": "Subject"
-                                    },
-                                    {
-                                        "name": "html",
-                                        "type": "text",
-                                        "label": "Content"
-                                    },
-                                    {
-                                        "name": "attachments",
-                                        "spec": [
-                                            {
-                                                "name": "fileName",
-                                                "type": "filename",
-                                                "label": "File name",
-                                                "required": true,
-                                                "semantic": "file:name"
-                                            },
-                                            {
-                                                "name": "data",
-                                                "type": "buffer",
-                                                "label": "Data",
-                                                "required": true,
-                                                "semantic": "file:data"
-                                            },
-                                            {
-                                                "name": "cid",
-                                                "type": "text",
-                                                "label": "Content-ID"
-                                            }
-                                        ],
-                                        "type": "array",
-                                        "label": "Attachments"
-                                    },
-                                    {
-                                        "name": "cc",
-                                        "spec": {
-                                            "name": "value",
-                                            "type": "email",
-                                            "label": "Email address"
-                                        },
-                                        "type": "array",
-                                        "label": "Copy recipient"
-                                    },
-                                    {
-                                        "name": "bcc",
-                                        "spec": {
-                                            "name": "value",
-                                            "type": "email",
-                                            "label": "Email address"
-                                        },
-                                        "type": "array",
-                                        "label": "Blind copy recipient"
-                                    }
-                                ],
-                                "interface": [
-                                    {
-                                        "name": "messageId",
-                                        "type": "text",
-                                        "label": "Message ID"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": 13,
-                            "module": "google-sheets:updateRow",
-                            "version": 2,
-                            "parameters": {
-                                "__IMTCONN__": 8353266
-                            },
-                            "mapper": {
                                 "from": "drive",
                                 "mode": "select",
                                 "values": {
-                                    "8": "Backordered - customer informed"
+                                    "8": "Procurement - Create Purchase Request"
                                 },
-                                "sheetId": "Orders",
-                                "rowNumber": "{{6.`__ROW_NUMBER__`}}",
-                                "spreadsheetId": "/1ai8-J37o_HD6zJmaYX6EvDK7HEN4afds/1YS6Ev_YT5LyQp5M6MQcl2YjBbLnjlQEp5IqUemB4uAU",
+                                "sheetId": "Form Responses 1",
+                                "rowNumber": "{{1.`__ROW_NUMBER__`}}",
+                                "spreadsheetId": "/1ai8-J37o_HD6zJmaYX6EvDK7HEN4afds/1gB6kCeueMDYXXfVU8TTvKkFgIYxz8RYR0I0wL8L1RyQ",
                                 "includesHeaders": true,
                                 "valueInputOption": "USER_ENTERED"
                             },
                             "metadata": {
                                 "designer": {
-                                    "x": 1300,
-                                    "y": 326,
-                                    "name": "Backoreded status update"
+                                    "x": 341,
+                                    "y": 98,
+                                    "name": "Procurement - Create Purchase Request"
                                 },
                                 "restore": {
                                     "expect": {
@@ -1638,12 +1815,12 @@
                                             "label": "Search by path"
                                         },
                                         "sheetId": {
-                                            "label": "Orders"
+                                            "label": "Form Responses 1"
                                         },
                                         "spreadsheetId": {
                                             "path": [
                                                 "Make Scenario",
-                                                "Purchase Order & Inventory"
+                                                "Purchase Order (NEW Responses)"
                                             ]
                                         },
                                         "includesHeaders": {
@@ -1906,38 +2083,148 @@
                                         "type": "collection",
                                         "label": "Values"
                                     }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 7,
+                            "module": "google-email:ActionSendEmail",
+                            "version": 2,
+                            "parameters": {
+                                "account": 8566231
+                            },
+                            "mapper": {
+                                "from": "",
+                                "to": [
+                                    "{{1.`7`}}"
                                 ],
-                                "interface": [
+                                "subject": "Order {{1.`1`}} - Backorder Notification",
+                                "html": "<p>Dear {{1.`5`}},</p>\n\n<p>Your order {{1.`1`}} for {{1.`4`}} units of {{1.`3`}} is on backorder as we out out of stock or have limited availability.</p>\n\n<p>Your order will be ready for shipment in approximately 4 weeks.</p>\n\n<p>If you have any questions please get in touch with our customer support team.</p>\n\n<p>Thank you,<br>Your Company</p>",
+                                "attachments": [],
+                                "cc": [],
+                                "bcc": []
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 641,
+                                    "y": 98,
+                                    "name": "Backordered"
+                                },
+                                "restore": {
+                                    "parameters": {
+                                        "account": {
+                                            "label": "Send email to resubmit order (ellonatest9@gmail.com)",
+                                            "data": {
+                                                "scoped": "true",
+                                                "connection": "google-restricted"
+                                            }
+                                        }
+                                    },
+                                    "expect": {
+                                        "to": {
+                                            "mode": "chose",
+                                            "items": [
+                                                null
+                                            ]
+                                        },
+                                        "attachments": {
+                                            "mode": "chose"
+                                        },
+                                        "cc": {
+                                            "mode": "chose"
+                                        },
+                                        "bcc": {
+                                            "mode": "chose"
+                                        }
+                                    }
+                                },
+                                "parameters": [
                                     {
-                                        "name": "spreadsheetId",
+                                        "name": "account",
+                                        "type": "account:google-restricted",
+                                        "label": "Connection",
+                                        "required": true
+                                    }
+                                ],
+                                "expect": [
+                                    {
+                                        "name": "from",
                                         "type": "text",
-                                        "label": "Spreadsheet ID"
+                                        "label": "From"
                                     },
                                     {
-                                        "name": "updatedRange",
-                                        "type": "text",
-                                        "label": "Updated range"
+                                        "name": "to",
+                                        "type": "array",
+                                        "label": "To",
+                                        "required": true,
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address",
+                                            "required": true
+                                        }
                                     },
                                     {
-                                        "name": "updatedRows",
+                                        "name": "subject",
                                         "type": "text",
-                                        "label": "Updated rows"
+                                        "label": "Subject"
                                     },
                                     {
-                                        "name": "updatedColumns",
+                                        "name": "html",
                                         "type": "text",
-                                        "label": "Updated columns"
+                                        "label": "Content"
                                     },
                                     {
-                                        "name": "updatedCells",
-                                        "type": "text",
-                                        "label": "Updated cells"
+                                        "name": "attachments",
+                                        "type": "array",
+                                        "label": "Attachments",
+                                        "spec": [
+                                            {
+                                                "name": "fileName",
+                                                "label": "File name",
+                                                "type": "filename",
+                                                "required": true,
+                                                "semantic": "file:name"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "label": "Data",
+                                                "type": "buffer",
+                                                "required": true,
+                                                "semantic": "file:data"
+                                            },
+                                            {
+                                                "name": "cid",
+                                                "label": "Content-ID",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cc",
+                                        "type": "array",
+                                        "label": "Copy recipient",
+                                        "spec": {
+                                            "type": "email",
+                                            "label": "Email address",
+                                            "name": "value"
+                                        }
+                                    },
+                                    {
+                                        "name": "bcc",
+                                        "type": "array",
+                                        "label": "Blind copy recipient",
+                                        "spec": {
+                                            "type": "email",
+                                            "label": "Email address",
+                                            "name": "value"
+                                        }
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": 31,
+                            "id": 9,
                             "module": "http:ActionSendData",
                             "version": 3,
                             "parameters": {
@@ -1948,7 +2235,7 @@
                                 "ca": "",
                                 "qs": [],
                                 "url": "https://digibp.engine.martinlab.science/engine-rest/process-definition/key/Process_0ad1ggy/tenant-id/25DIGIBP29/start",
-                                "data": "{\n      \"variables\": {\n        \"status\" : {\n          \"value\" : \"backordered\",\n          \"type\": \"String\"\n        },\n        \"orderId\" : {\n          \"value\" : {{30.`1`}},\n          \"type\": \"Integer\"\n        },\n  \"quantity\" : {\n          \"value\" : {{30.`4`}},\n          \"type\": \"Integer\"\n         },\n   \"productId\" : {\n          \"value\" : {{30.`2`}},\n          \"type\": \"Integer\"\n     },\n   \"orderShipped\" : {\n          \"value\" : {{30.`1`}},\n          \"type\": \"Integer\"\n         }\n      }\n    }",
+                                "data": "{\r\n  \"businessKey\": \"{{1.`1`}}\",\r\n  \"tenantId\": \"25DIGIBP29\",\r\n  \"variables\": {\r\n    \"status\": {\r\n      \"value\": \"backordered\",\r\n      \"type\": \"String\"\r\n    },\r\n    \"orderId\": {\r\n      \"value\": {{1.`1`}},\r\n      \"type\": \"Integer\"\r\n    },\r\n    \"quantity\": {\r\n      \"value\": {{1.`4`}},\r\n      \"type\": \"Integer\"\r\n    },\r\n    \"productId\": {\r\n      \"value\": {{1.`2`}},\r\n      \"type\": \"Integer\"\r\n    },\r\n    \"orderShipped\": {\r\n      \"value\": {{1.`1`}},\r\n      \"type\": \"Integer\"\r\n    }\r\n  }\r\n}",
                                 "gzip": true,
                                 "method": "post",
                                 "headers": [
@@ -1973,8 +2260,8 @@
                             },
                             "metadata": {
                                 "designer": {
-                                    "x": 1614,
-                                    "y": 322
+                                    "x": 941,
+                                    "y": 98
                                 },
                                 "restore": {
                                     "expect": {

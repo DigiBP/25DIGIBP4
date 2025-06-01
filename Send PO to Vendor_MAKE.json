@@ -76,7 +76,7 @@
                 ],
                 "bcc": [],
                 "from": "",
-                "html": "Dear Vendor, \n\nWe would like to place an order for {{1.quantity}} of {{1.productDescription}}.\n\nPlease lets us know of the possible delivery date.\n\nKind Regards,\nYour Company",
+                "html": "<p>Dear Vendor,</p> \n\n<p>We would like to place an order for {{1.quantity}} units of product {{1.productId}}.</p>\n\n<p>Please lets us know of the possible delivery date.</p>\n\n<p>Kind Regards,<br>Your Company</p>",
                 "subject": "Order Request ",
                 "attachments": []
             },
