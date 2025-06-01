@@ -80,16 +80,16 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 
 
 
+🎥 [As-Is Route 1 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/Route%20Videos/as-is%20Route%201.mp4)
+🎥 [As-Is Route 2 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/Route%20Videos/as-is%20Route%202.mp4)
 
-📹 [Watch the process video Camunda Token - goods available](as-is%20Route%201.mp4)
-📹 [Watch the process video Camunda Token - goods not available](as-is%20Route%202.mp4)
 
 
 
   
 # TO-BE Process
 
-
+![To-be Process](Pictures/As_is_process.png)
 
 Technologies Used
 
@@ -98,6 +98,7 @@ Technologies Used
 | Camunda 7            |Modeling the business process |
 | BPMN 2.0       |Used Modeling-Language            |
 | Make                |Used to automate tasks using different Modules |
+| Post                 | 
 | Voiceflow             |Used to design and deploy the conversational interface|
 
 
@@ -136,20 +137,42 @@ To create the Scenario, the following Modules have been used:
 | Gmail |Send Email     |Sends either a "thank you for your order" email or a notification that the item is currently out of stock and delivery will take longer as it will be re-ordered |
 | HTTP Module | Camunda Integration | https://digibp.engine.martinlab.science/engine-rest/process-definition/key/Process_0ad1ggy/tenant-id/25DIGIBP29/start |
 
-![Order Confirmation](Pictures/GMail_module_description.png)
+Example of the auotmated messages created:
+![Order Confirmation](Pictures/GMail_module.png)
 ![Thank You Mail](Pictures/Thank_you_mail.png)
+
 ![GMail Module](Pictures/GMail_module_description.png)
 ![Backorder Confirmation](Pictures/Backordermessage.png)
 
 # Make Scenario 2
 
 ![Service Task: Send PO to vendor](Pictures/Make_scenario_send_PO_to_vendor.png)
-![Send PO to vendor](Pictures/Send_PO_to_vendor_task.png)
 
 The second Make Scenario has been created  to replace another manual task and is automatically triggered after the User Task "Purchase Request" when stock is unavailable.
 It creates and sends a new purchase order to vendor via email.
 
-![Service Task: Send PO to vendor](Pictures/Make_scenario_send_PO_to_vendor.png)
+![Send PO to vendor](Pictures/Send_PO_to_vendor_task.png)
+![Purchas Order to Vendor](Pictures/Backorder_message.png)
+
+The scenario was created by using a Custom Webhook and the GMail Module (Send Email). 
+
+After the Service Task a Message Intermediate Catch Event was created as the Vendor needs to confirm the delivery date. 
+As soon as the vendor replies with a confirmation via email, Postman Triggers to Camunda (manually triggered) - Postman should show a green 204 No Conent message and in Camunda the next task available should be visible (Create Production Order). 
+
+![Intermediate Event](Pictures/Message_intermediate_catch_event.png)
+
+# Recap of the integrated Flow
+
+1. Customer submits PO → Google Form
+2. InventoryCheck Make Scenario runs:
+   - Checks inventory
+   - Updates Google Sheet
+   - Notifies customer
+   - Starts Camunda process
+3. If stock is not available, Camunda waits for delivery confirmation (message event).
+4. Vendor receives email → sends delivery date manually
+5. Professor triggers message via Postman (token continues in Camunda)
+
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
@@ -165,12 +188,24 @@ The benefits of offering a chatbot as a service include the following:
 The chatbot is complements the Camunda-driven digital process and MAKE automated process flow by serving as a human-centric interface at the customer touchpoint.
 
 # Process Improvements
-What got improved?
+These two major improvements deliver 
 
-- Reduce manual tasks
-- Improve customer experience
-- Save time for the customer service team
-- Enable the team to focus on continuous improvement
+| Challange                    | Solution                                        |
+|-------------------------|----------------------------------------------|
+| Manual PO checks           |Google Forms + automated trigger |
+| Manual stock checks      |Inventory lookup in Google Sheets         |
+| Delayed communication                |Emails sent automatically via Make |
+| No decision automation                 | Camunda decision based on stock status |
+| Process errors             |Eliminates human input at routing points|
+| Slow vendor coordination           |Email automatically generated and sent|
+
+By integrating the two Make Scenarios the involvement of Customer Service within this process got eliminated completly. These now free resources may be allocated to other important business tasks.
+
+# Future Steps and Recommendations
+The current solution is not able to auto-generate Order ID's. This should be tackled bevore implementing the improvements for the process in real life.
+
+
+
 
 The following deliverables are mandatory: 
 - Link to GitHub repositories containing: 
