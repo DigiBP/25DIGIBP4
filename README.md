@@ -146,6 +146,7 @@ Example of the auotmated messages created:
 # Make Scenario 2
 
 The second Make Scenario has been created  to replace another manual task and is automatically triggered after the User Task "Purchase Request" when stock is unavailable.
+
 ![Service Task: Send PO to vendor](Pictures/Make_scenario_send_PO_to_vendor.png)
 
 It creates and sends a new purchase order to vendor via email.
