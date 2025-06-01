@@ -81,7 +81,7 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 
 
 📹 [Watch the process video Camunda Token - goods available](as-is%20Route%201.mp4)
-📹 [Watch the process video Camunda Token - goods not available](https://github.com/DigiBP/25DIGIBP4/blob/main/as-is%20Route%202.mp4?raw=true)
+📹 [Watch the process video Camunda Token - goods not available](as-is%20Route%202.mp4)
 
 
 
