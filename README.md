@@ -9,13 +9,13 @@
 | Patricia Abel           | patricia.abel@students.fhnw.ch               |
 | Ramona Steinauer        | ramona.steinauer@students.fhnw.ch	         |
 
-# 💡🧠 Coaches
+# 💡 Coaches
 
 - Andreas Martin
 - Charuta Pande 
 - Devid Montecchiari
 
-# 📝🚚📦 Introduction
+# 📝 Introduction
 
 Our project is a real-life process within a global food&beverage machinery manufacturer and is a key supporting process to the company´s core sales process of selling food&beverage machinery including its repair and maintenance parts. This order-to-shipment process involves 4 departments and covers the work ranging from processing the purchase order (PO) to preparing and shipping the ordered goods. With over 600 customers and 2500 orderlines processed monthly, the process requires a close followup across all involved departments to fulfill custoemer orders as soon as possible as a main driver behind customer satisfaction.
 
@@ -109,6 +109,8 @@ https://docs.google.com/forms/d/e/1FAIpQLSfrZuLGhWxTEj_86DGCYEw97wCztB8QaVXKZe03
 
 
 # Make Scenarios
+
+
 
 # Email Notification
 
