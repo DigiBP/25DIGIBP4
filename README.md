@@ -178,7 +178,14 @@ As soon as the vendor replies with a confirmation via email, Postman Triggers to
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
-As part of the digitalization of the Order-to-Cash process, a chatbot was implemented to handle customer inquiries related to order status. The solution is designed to reduce manual communication, improve response times, and enhance customer satisfaction. The chatbot also guides the customer through inquiries concerning the changing the order, the order process and return inquiries.
+As part of the digitalization of the Order-to-Cash process, a testing chatbot was implemented to handle customer inquiries related to order status. The chatbot, named Buddy,  will serve as a virtual customer service agent, supporting the Customer Service team in their daily work. Right now the primary objective of the chatbot test version is to strengthen customer acceptance by integrating the chatbot early on the website, enabling customer interactions to be tested. At the same time early adaption will also help preparing a smooth transition for the internal customerservicing teams towards handling digitalised and optimised processes. The chatbot Buddy is designed to reduce manual communication, improve response times, and enhance customer satisfaction. The chatbot guides the customers through the most common inquiries concerning the changing the order, the order process and return inquiries.
+
+[Picture overview of Buddy]
+
+
+
+
+
 The chatbot enables customers to receive real-time answers on their questions by entering a valid order ID. It retrieves order information from Google Sheets databases. The chatbot operates through a voice or text interface and is accessible 24/7.
 
 The benefits of offering a chatbot as a service include the following:
@@ -188,6 +195,11 @@ The benefits of offering a chatbot as a service include the following:
 * Easily scalable to cover additional services (e.g., delivery updates, FAQs)
 
 The chatbot is complements the Camunda-driven digital process and MAKE automated process flow by serving as a human-centric interface at the customer touchpoint.
+
+
+
+
+
 
 # Process Improvements
 These two major improvements deliver 
