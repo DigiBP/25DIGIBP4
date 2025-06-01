@@ -58,8 +58,8 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 - Dispatch: performs warehouse jobs (picking and packing) in preparation to shipping goods
 
 **External**:
-- Customer
-- Vendor (interaction with vendors not modelled as it´s out of scope of this project)
+- Customer (interaction with customers not modelled)
+- Vendor (interaction with vendors not modelled)
   
 ## 📋 Process Description
 
