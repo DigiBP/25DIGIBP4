@@ -47,7 +47,7 @@ Our goal is to transform the current process by introducing a partial automation
 This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability (see tasks highlighted in green) and (2) preparing goods for shipment. The first part involves several user tasks within customer service all of which involve non-automated workflow and manual communication. First, an incoming PO is processed retreived manually from a mailbox and PO data entered into the system. after this, customer service manually checks the goods availability which is done by looking up the ordered goods in a stock database and depending on the result, customer service notifies the respective colleague to proceed with the process. If goods are available, Dispatch is notified to prepare the goods for shipment. If goods are not available, customer service notifies procurement to purchase the missing goods. (for both paths see "token videos" below). Such manual availability check and communication is tidious and leads to time wastes in the process which is further excacerbated by loose follow-ups further down the process by other process participants. 
 
 ![As-Is Process Part 1](https://github.com/DigiBP/25DIGIBP4/blob/main/as-is%20process%20part%201.png?raw=true)
-
+![As-Is Process Part 1](Pictures/As_is_process_part_1.png)
 
 **Roles involved in the process**:
 
@@ -76,6 +76,7 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 
 **Overview of full as-is process**
 ![As-Is Process](https://github.com/DigiBP/25DIGIBP4/blob/main/As_Is_Process.png?raw=true)
+![As-Is Process](Pictures/As_is_process.png)
 
 
 
@@ -111,6 +112,7 @@ Inventory Sheet: https://docs.google.com/spreadsheets/d/1YS6Ev_YT5LyQp5M6MQcl2Yj
 # Make Scenario 1
 
 ![Receive Order & Inventory Check](https://github.com/DigiBP/25DIGIBP4/blob/main/Make_scenario_stockcheck.png?raw=true)
+![Receive Order & Inventory Check](Pictures/Make_scenario_receiveOrder_invetoryCheck.png)
 
 The created Make Scenario automates all user tasks (below in green) from customer service and is able to make manual user tasks obsolet.
 It takes over the following tasks:
@@ -123,6 +125,7 @@ AND
 -	contact procurement to backorder and out of stock item
   
 ![Obsolet manual tasks](https://github.com/DigiBP/25DIGIBP4/blob/main/Obsolet_manual_tasks.png?raw=true)
+![Obsolet Manual Tasks](Pictures/Obsolet_manual_tasks.png)
 
 To create the Scenario, the following Modules have been used.
 
@@ -142,6 +145,7 @@ Watch Rows
 # Make Scenario 2
 
 ![Service Task: Send PO to vendor](https://github.com/DigiBP/25DIGIBP4/blob/main/Make_scenario_send_PO_to_vendor.png?raw=true)
+![Service Task: Send PO to vendor](Pictures/Make_scenario_send_PO_to_vendor.png)
 
 The second Make Scenario has been created  to replace the
 Triggered after User Task Create Purchase Request (when stock is unavailable). Sends purchase order to vendor via an email and
