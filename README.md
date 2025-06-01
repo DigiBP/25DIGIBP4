@@ -96,8 +96,6 @@ To tackle the current challenges of the AS-IS Process the following technologies
 | Post                 | 
 | Voiceflow             |Used to design and deploy the conversational interface|
 
-- **Fragmented and manual Communication**  
-  Coordination between departments depends on manual notifications, leading to delays and errors.
 
 # Google Form 
 Our Order to Ship process starts when an order is entered into the Google form (note: the process can not be started manually in Camunda Engine! – which is as expected). As soon as the order has been submitted via google form, the tasks appear in Camunda Engine and may then be completed.
