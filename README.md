@@ -29,14 +29,8 @@ For a breakdown of specific challenges relative to this process see the below ov
 - **Manual goods availability Check**  
   POs are received by email, validated, and entered into the system manually.
 
-- **Inefficient Goods Availability Check**  
-  Manual stock checks are performed, and customer service must inform other departments accordingly.
-
 - **Inefficient Follow-Up**  
   Manual follow-ups are time-consuming and prone to being overlooked.
-
-- **Process Bottlenecks**  
-  Delays often occur when missing goods require procurement and production coordination.
 
 - **Lack of Workflow Automation**  
   The absence of automated decision-making especially in terms of checking the availability of ordered goods leads to unnecessary workload and time losses.
