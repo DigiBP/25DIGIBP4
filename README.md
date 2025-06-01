@@ -136,6 +136,7 @@ To create the Scenario, the following Modules have been used:
 | HTTP Module | Camunda Integration | https://digibp.engine.martinlab.science/engine-rest/process-definition/key/Process_0ad1ggy/tenant-id/25DIGIBP29/start |
 
 Example of the auotmated messages created:
+
 ![Order Confirmation](Pictures/Gmail_module.png)
 ![Thank You Mail](Pictures/Thank_you_mail.png)
 
@@ -144,9 +145,9 @@ Example of the auotmated messages created:
 
 # Make Scenario 2
 
+The second Make Scenario has been created  to replace another manual task and is automatically triggered after the User Task "Purchase Request" when stock is unavailable.
 ![Service Task: Send PO to vendor](Pictures/Make_scenario_send_PO_to_vendor.png)
 
-The second Make Scenario has been created  to replace another manual task and is automatically triggered after the User Task "Purchase Request" when stock is unavailable.
 It creates and sends a new purchase order to vendor via email.
 
 ![Send PO to vendor](Pictures/Send_PO_to_vendor_task.png)
