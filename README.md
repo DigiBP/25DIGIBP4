@@ -71,6 +71,8 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 | 4            | Planner                            | Create a production order based on the delivery timeline.                                                                                                    | Planner                         |
 | 5            | Missing order items are planned in for production | As soon as the delivery date from vendor is available, Customer Service is notified and informs Dispatch                                         | Customer Service                |
 | 6            | Picking and packing                | Goods are prepared for shipment.                                                                                                                             | Dispatch                        |
+
+
 **Overview of full as-is process**
 ![As-Is Process](https://github.com/DigiBP/25DIGIBP4/blob/main/As_Is_Process.png?raw=true)
 
