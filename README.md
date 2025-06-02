@@ -249,11 +249,22 @@ By integrating the two Make Scenarios the involvement of Customer Service within
 While there are still some limitations for our chatbot, like handling specific technical questions, the chatbot represents a promising step toward digital transformation in customer service.
 To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
-# Future Steps and Recommendations
-The current solution is not able to auto-generate Order ID's. This should be tackled bevore implementing the improvements for the process in real life.
+# 🔮 Future Steps and Opportunities
+While the current process delivers major improvements in automation, communication, and efficiency, there are several areas where further enhancements can provide even greater value and scalability.
 
-Future updates of Buddy will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
-Moreover, Voiceflow offers the possibility of integrating the chatbot with hotlines to ensure 24/7 availability, thus enhancing customer service beyond typical service hours. 
+**Process Enhancements**
+- Returns Process: Currently, product returns require manual authorization and are not formally integrated. Introducing a structured return process, either as part of the To-Be workflow or as a separate subprocess, would improve traceability and consistency.
+- Optimize Order Form: Order IDs are currently entered manually. To prevent errors and improve data integrity, an auto-generated Order ID should be implemented. This should be tackled before implementing the improvements for the real life process.
+
+**AI and Chatbot Development**
+AI Agent Capabilities: The Voiceflow assistant ("Buddy") currently responds in English only and is limited to predefined flows. 
+Future updates should:
+- Expand language capabilities.
+- Improve natural language phrasing and flexibility.
+- Enable integration with live support or hotlines for 24/7 customer service.
+
+**Operational Efficiency and Costs**
+Cost-Savings Potential: With increasing automation of customer interaction and internal task routing, there is potential to reorganize support resources and reduce workload for the customer service team leading to operational savings.
 
 # Technologie Used
 To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
@@ -263,5 +274,5 @@ To tackle the current challenges of the AS-IS Process the following technologies
 | Camunda 7            |Modeling the business process |
 | BPMN 2.0       |Used Modeling-Language            |
 | Make                |Used to automate tasks using different Modules |
-| Post                 |Simulation  
+| Postman                 |Manual trigger to Camunda (Simulation of incoming confirmation to continue process)|
 | Voiceflow             |Used to design and deploy the conversational interface|
