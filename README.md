@@ -184,13 +184,21 @@ Buddy is an LM agent designed with a comprehensive knowledge base containing det
 Currently, Buddy is prepared to handle five distinct workflows, with the focus on the digitalised customer order process. 
 
 [Picture overview of Buddy]
+
 When a customer wishes to place an order or inquire about the ordering process, Buddy triggers a predefined sample text combined with a direct link to the digital order form, initiating the automated customer order process in Make. 
+
 [Screenshot Place Order]
+
 If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
+
 [Picture Order Status workflow]
 [Picture Webhook Order Status]
 [Picture gSheet Order Status Inquiries]
 
+For order changes, Buddy explains that such changes require direct communication with the customer service team, prompting the customer to send an email with their order ID and details to the specified email address. Similarly, if a customer wants to cancel their order, Buddy instructs them to email the customer service team with their order ID and reason for cancellation, noting that the team will contact them within 24 hours to discuss a solution.
+The logic here is that the cancellation of or a change of a confirmed order will require a manual intervention in the workflow. For the start these types of inquiries are intentionally made more cumbersome for the customer by requiring them to get active and write an email. This procedure is intended to curb excessive requests for order cancellation or modification.
+
+[Picture Order cancellation & changing Order Texts]
 
 
 
