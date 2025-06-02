@@ -196,33 +196,32 @@ If the customer wants to check their order status, Buddy asks them for their ord
 [Picture gSheet Order Status Inquiries]
 
 For order changes, Buddy explains that such changes require direct communication with the customer service team, prompting the customer to send an email with their order ID and details to the specified email address. Similarly, if a customer wants to cancel their order, Buddy instructs them to email the customer service team with their order ID and reason for cancellation, noting that the team will contact them within 24 hours to discuss a solution.
+
 The logic here is that the cancellation of or a change of a confirmed order will require a manual intervention in the workflow. For the start these types of inquiries are intentionally made more cumbersome for the customer by requiring them to get active and write an email. This procedure is intended to curb excessive requests for order cancellation or modification.
 
 [Picture Order cancellation & changing Order Texts]
 
 To avoid overwhelming the chatbot’s knowledge base and to maintain agility, a second specialised agent, the Return Specialist, handles return inquiries. This ensures that the chatbots knowledge bases are not getting distracted by too much data and the correct paths are being triggered. In the first rounds of testings only using one agent resulted in getting vague answers or got the chatbot stuck in loops.
+
 The steps to the second agent are being taken when the customer insists on a return of the ordered product. The Return Specialist handles different cases, currently modelled are either valid return inquiries or delivery breakage cases. For both paths, the chatbot thanks the customer for their input, collects the customer’s email address and order number, and then sends the information to the complaints team through a POST request. The customer is informed that the complaints team will reach out within 24 hours. The MAKE workflow is identical to the order status workflow, only differing in the webhook. The inquiry will land on the “Return Inquiry” page of the customer Inquiries gSheet.
 
 [Picture Return  workflow]
 [Picture gSheet Return Inquiries]
 
+Limitations and Future Enhancements
 
+Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model not yet live, this is acceptable within the project’s scope. 
+To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
+Future updates will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
+Moreover, Voiceflow offers the possibility of integrating the chatbot with hotlines to ensure 24/7 availability, thus enhancing customer service beyond typical service hours. 
 
+The chatbot significantly enhances the order process by:
+-	Reducing manual communication and workload for Customer Service.
+-	Providing consistent, fast, and reliable customer communication.
+-	Seamlessly complementing the automated processes in Camunda and Make
 
-The chatbot enables customers to receive real-time answers on their questions by entering a valid order ID. It retrieves order information from Google Sheets databases. The chatbot operates through a voice or text interface and is accessible 24/7.
-
-The benefits of offering a chatbot as a service include the following:
-* Reduces manual workload for the Customer Service team
-* Delivers consistent, fast, and reliable customer communication
-* Enhances process transparency and customer satisfaction
-* Easily scalable to cover additional services (e.g., delivery updates, FAQs)
-
-The chatbot is complements the Camunda-driven digital process and MAKE automated process flow by serving as a human-centric interface at the customer touchpoint.
-
-
-
-
+While there are still some limitations, like handling specific technical questions, the chatbot represents a promising step toward digital transformation in customer service.
 
 
 # Process Improvements
