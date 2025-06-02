@@ -224,8 +224,8 @@ Future updates will focus on refining phrasing and expanding language capabiliti
 Moreover, Voiceflow offers the possibility of integrating the chatbot with hotlines to ensure 24/7 availability, thus enhancing customer service beyond typical service hours. 
 
 The chatbot significantly enhances the order process by:
--	Reducing manual communication and workload for Customer Service.
--	Providing consistent, fast, and reliable customer communication.
+-	Reducing manual communication and workload for Customer Service
+-	Providing consistent, fast, and reliable customer communication
 -	Seamlessly complementing the automated processes in Camunda and Make
 
 
