@@ -77,7 +77,7 @@ This order-to-shipping process can be broken down into two main parts: processin
 🎥 [As-Is Route 2 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/as-is%20Route%202.mp4)
 
   
-# TO-BE Process
+# ✨ TO-BE Process
 The redesigned process focuses on automating and orchestrating the end-to-end order-to-shipping workflow. By leveraging Camunda, Make, and Voiceflow, we have eliminated many manual steps, ensured real-time data flow, and introduced decision automation based on stock availability. This enables seamless collaboration between departments, reduces human errors, and significantly speeds up both vendor handling and customer communication.
 
 **Key Features**
@@ -89,19 +89,9 @@ The redesigned process focuses on automating and orchestrating the end-to-end or
 - Conversational interface with Voiceflow to support customer communication
 - Error prevention by eliminating manual routing through automation and validation steps
 - Faster turnaournd by reducing processing and response time to vendors and clients
+  
 
 ![To-be Process](Pictures/To_be_process.png)
-
-To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
-
-| Component                    | Purpose                                        |
-|-------------------------|----------------------------------------------|
-| Camunda 7            |Modeling the business process |
-| BPMN 2.0       |Used Modeling-Language            |
-| Make                |Used to automate tasks using different Modules |
-| Post                 | 
-| Voiceflow             |Used to design and deploy the conversational interface|
-
 
 # Google Form 
 Our Order to Ship process starts when an order is entered into the Google form (note: the process can not be started manually in Camunda Engine! – which is as expected). As soon as the order has been submitted via google form, the tasks appear in Camunda Engine and may then be completed.
@@ -263,3 +253,14 @@ The current solution is not able to auto-generate Order ID's. This should be tac
 
 Future updates of Buddy will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
 Moreover, Voiceflow offers the possibility of integrating the chatbot with hotlines to ensure 24/7 availability, thus enhancing customer service beyond typical service hours. 
+
+# Technologie Used
+To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
+
+| Component                    | Purpose                                        |
+|-------------------------|----------------------------------------------|
+| Camunda 7            |Modeling the business process |
+| BPMN 2.0       |Used Modeling-Language            |
+| Make                |Used to automate tasks using different Modules |
+| Post                 |Simulation  
+| Voiceflow             |Used to design and deploy the conversational interface|
