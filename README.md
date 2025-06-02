@@ -80,8 +80,9 @@ This order-to-shipping process can be broken down into two main parts: (1) proce
 
 
 
-🎥 [As-Is Route 1 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/Route%20Videos/as-is%20Route%201.mp4)
-🎥 [As-Is Route 2 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/Route%20Videos/as-is%20Route%202.mp4)
+🎥 [As-Is Route 1 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/as-is%20Route%201.mp4)
+
+🎥 [As-Is Route 2 Video](https://github.com/DigiBP/25DIGIBP4/blob/main/As-Is%20Process/as-is%20Route%202.mp4)
 
   
 # TO-BE Process
@@ -157,9 +158,20 @@ It creates and sends a new purchase order to vendor via email.
 The scenario was created by using a Custom Webhook and the GMail Module (Send Email). 
 
 After the Service Task a Message Intermediate Catch Event was created as the Vendor needs to confirm the delivery date. 
-As soon as the vendor replies with a confirmation via email, Postman Triggers to Camunda (manually triggered) - Postman should show a green 204 No Conent message and in Camunda the next task available should be visible (Create Production Order). 
 
 ![Intermediate Event](Pictures/Message_intermediate_catch_event.png)
+
+As soon as the vendor replies with a confirmation via email, Postman is used to manually trigger this message even in Camunda to simluate the vendor's confirmation. This is requireed because the process contains a **Message Intermediate Catch Event** ("delivery date confirmed") that waits for an external signal to proceed. By sending a POST request from Postman to the Camunda Engine, the process continues with the next task: **Create Production Order**
+
+**Example POST endpoint:**
+
+POST https://digibp.engine.martinlab.science/engine-rest/message
+
+{
+"messageName":"DeliveryDateConfirmed",
+"tenantId" : "25DIGIBP29",
+"businessKey" : 3453
+}
 
 # Recap of the integrated Flow
 
@@ -169,7 +181,7 @@ As soon as the vendor replies with a confirmation via email, Postman Triggers to
    - Updates Google Sheet
    - Notifies customer
    - Starts Camunda process
-3. If stock is not available, Camunda waits for delivery confirmation (message event).
+3. If stock is not available, Camunda waits for delivery confirmation (message event)
 4. Vendor receives email → sends delivery date manually
 5. Professor triggers message via Postman (token continues in Camunda)
 
