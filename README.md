@@ -256,6 +256,7 @@ While the current process delivers major improvements in automation, communicati
 - Optimize Order Form: Order IDs are currently entered manually. To prevent errors and improve data integrity, an auto-generated Order ID should be implemented. This should be tackled before implementing the improvements for the real life process.
 
 **AI and Chatbot Development**
+
 AI Agent Capabilities: The Voiceflow assistant ("Buddy") currently responds in English only and is limited to predefined flows. 
 Future updates should:
 - Expand language capabilities.
@@ -263,6 +264,7 @@ Future updates should:
 - Enable integration with live support or hotlines for 24/7 customer service.
 
 **Operational Efficiency and Costs**
+
 Cost-Savings Potential: With increasing automation of customer interaction and internal task routing, there is potential to reorganize support resources and reduce workload for the customer service team leading to operational savings.
 
 # Technologie Used
