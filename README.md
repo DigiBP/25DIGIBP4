@@ -209,6 +209,7 @@ To avoid overwhelming the chatbot’s knowledge base and to maintain agility, a 
 The steps to the second agent are being taken when the customer insists on a return of the ordered product. The Return Specialist handles different cases, currently modelled are either valid return inquiries or delivery breakage cases. For both paths, the chatbot thanks the customer for their input, collects the customer’s email address and order number, and then sends the information to the complaints team through a POST request. The customer is informed that the complaints team will reach out within 24 hours. The MAKE workflow is identical to the order status workflow, only differing in the webhook. The inquiry will land on the “Return Inquiry” page of the customer Inquiries gSheet.
 
 ![Return Workflow](Pictures/Return_Workflow_Voiceflow.png)
+![Webhook Return Process](Make_Voiceflow_Webhook_Return Process.png)
 ![Gsheet Return Inquiries](Pictures/gSheet_Return_Inquiry.png)
 
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
