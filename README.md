@@ -215,13 +215,12 @@ The steps to the second agent are being taken when the customer insists on a ret
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
 
 
-**Current Limitations and Future Enhancements**
+**Current Limitations**
 
 Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model and not yet live, this is acceptable within the project’s scope. 
 To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
 Future updates will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
-Moreover, Voiceflow offers the possibility of integrating the chatbot with hotlines to ensure 24/7 availability, thus enhancing customer service beyond typical service hours. 
 
 The chatbot significantly enhances the order process by:
 -	Reducing manual communication and workload for Customer Service
