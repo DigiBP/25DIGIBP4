@@ -156,22 +156,17 @@ It creates and sends a new purchase order to vendor via email.
 ![Purchas Order to Vendor](Pictures/Backorder_message.png)
 
 The scenario was created by using a Custom Webhook and the GMail Module (Send Email). 
-
 After the Service Task a Message Intermediate Catch Event was created as the Vendor needs to confirm the delivery date. 
 
 ![Intermediate Event](Pictures/Message_intermediate_catch_event.png)
 
-As soon as the vendor replies with a confirmation via email, Postman is used to manually trigger this message even in Camunda to simluate the vendor's confirmation. This is requireed because the process contains a **Message Intermediate Catch Event** ("delivery date confirmed") that waits for an external signal to proceed. By sending a POST request from Postman to the Camunda Engine, the process continues with the next task: **Create Production Order**
+As soon as the vendor replies with a confirmation via email, Postman is used to manually trigger this message even in Camunda to simluate the vendor's confirmation. This is requireed because the process contains a Message Intermediate Catch Event ("delivery date confirmed") that waits for an external signal to proceed. By sending a POST request from Postman to the Camunda Engine, the process continues with the next task: Create Production Order
 
 **Example POST endpoint:**
 
 POST https://digibp.engine.martinlab.science/engine-rest/message
 
-{
-"messageName":"DeliveryDateConfirmed",
-"tenantId" : "25DIGIBP29",
-"businessKey" : 3453
-}
+![Post Endpoint](Pictures/Usage_postman.png)
 
 # Recap of the integrated Flow
 
