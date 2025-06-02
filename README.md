@@ -193,7 +193,7 @@ When a customer wishes to place an order or inquire about the ordering process, 
 If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
 
 ![Order Status workflow](Pictures/Order_Status_Workflow_Voiceflow.png)
-![Webhook Order Status]
+![Webhook Order Status](Make_Voiceflow_Webhook_Order Status.png)
 ![GSheet Order Status Inquiries](Pictures/gSheet_Order_Status_Inquiry.png)
 
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
