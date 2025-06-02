@@ -193,7 +193,7 @@ When a customer wishes to place an order or inquire about the ordering process, 
 If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
 
 ![Order Status workflow](Pictures/Order_Status_Workflow_Voiceflow.png)
-![Webhook Order Status](Pictures/Webhook_Order_Status.png)
+![Webhook Order Status]
 ![GSheet Order Status Inquiries](Pictures/gSheet_Order_Status_Inquiry.png)
 
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
@@ -214,7 +214,7 @@ The steps to the second agent are being taken when the customer insists on a ret
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
 
 
-Current Limitations and Future Enhancements
+**Current Limitations and Future Enhancements**
 
 Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model and not yet live, this is acceptable within the project’s scope. 
 To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
