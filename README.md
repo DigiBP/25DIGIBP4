@@ -193,7 +193,7 @@ When a customer wishes to place an order or inquire about the ordering process, 
 If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
 
 ![Order Status workflow](Pictures/Order_Status_Workflow_Voiceflow.png)
-![Webhook Order Status](Make_Voiceflow_Webhook_Order Status.png)
+![Webhook Order Status](Pictures/Make_Voiceflow_Webhook_Order_Status.png)
 ![GSheet Order Status Inquiries](Pictures/gSheet_Order_Status_Inquiry.png)
 
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
@@ -209,7 +209,7 @@ To avoid overwhelming the chatbot’s knowledge base and to maintain agility, a 
 The steps to the second agent are being taken when the customer insists on a return of the ordered product. The Return Specialist handles different cases, currently modelled are either valid return inquiries or delivery breakage cases. For both paths, the chatbot thanks the customer for their input, collects the customer’s email address and order number, and then sends the information to the complaints team through a POST request. The customer is informed that the complaints team will reach out within 24 hours. The MAKE workflow is identical to the order status workflow, only differing in the webhook. The inquiry will land on the “Return Inquiry” page of the customer Inquiries gSheet.
 
 ![Return Workflow](Pictures/Return_Workflow_Voiceflow.png)
-![Webhook Return Process](Make_Voiceflow_Webhook_Return Process.png)
+![Webhook Return Process](Pictures/Make_Voiceflow_Webhook_Return_Process.png)
 ![Gsheet Return Inquiries](Pictures/gSheet_Return_Inquiry.png)
 
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
