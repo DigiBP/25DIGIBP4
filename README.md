@@ -178,15 +178,20 @@ As soon as the vendor replies with a confirmation via email, Postman Triggers to
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
-As part of the digitalization of the Order-to-Cash process, a testing chatbot was implemented to handle customer inquiries related to order status. The chatbot modeled in Voiceflow, named Buddy,  will serve as a virtual customer service agent, supporting the Customer Service team in their daily work. Right now the primary objective of the chatbot test version is to strengthen customer acceptance by integrating the chatbot early on the website, enabling customer interactions to be tested. The chatbot's main goal is to make the customer support process more efficient and to prepare the team for digital processes.
+As part of the digitalization of the Order-to-Cash process, a testing chatbot was implemented to handle customer inquiries related to order status. The chatbot modeled in Voiceflow, named Buddy,  will serve as a virtual customer service agent, supporting the Customer Service team in their daily work. Right now the primary objective of the chatbot test version is to strengthen customer acceptance by integrating the chatbot early on the website. The chatbot's main goal will be to make the customer support process more efficient as well as preparing the team for more digital processes to come.
 
-Buddy operates in five main workflows (paths), but the main focus right now is helping with placing orders since the underlying process has now been digitalized.
+Buddy is an LM agent designed with a comprehensive knowledge base containing detailed information about products and processes. Conversation examples, response guidelines, scenario handling, and company-specific details have been incorporated to ensure high-quality, consistent, and reliable communication with customers.
+Currently, Buddy is prepared to handle five distinct workflows, with the focus on the digitalised customer order process. 
 
 [Picture overview of Buddy]
+When a customer wishes to place an order or inquire about the ordering process, Buddy triggers a predefined sample text combined with a direct link to the digital order form, initiating the automated customer order process in Make. 
+[Screenshot Place Order]
+If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
+[Picture Order Status workflow]
+[Picture Webhook Order Status]
+[Picture gSheet Order Status Inquiries]
 
-The first step in the chatbots flow is an LM agent designed with a comprehensive knowledge base containing information about the companies products and processes. Conversation examples, response guidelines, scenario handling, and company-specific details have been incorporated to ensure high-quality, consistent, and reliable communication with customers.
-Currently, Buddy is prepared to handle five distinct workflows, with the main focus in our chatbot creation on the digitalised customer order process. When a customer wishes to place an order or inquire about the ordering process, Buddy triggers a predefined sample text combined with a direct link to the digital order form, initiating the automated customer order process in Make. 
-If the customer asks for the status of their order, Buddy retrieves real-time information from Google Sheets databases, offering updates on order status, delivery times, and shipment details.
+
 
 
 
