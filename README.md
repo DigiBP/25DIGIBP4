@@ -78,6 +78,19 @@ This order-to-shipping process can be broken down into two main parts: processin
 
   
 # TO-BE Process
+The redesigned process focuses on automating and orchestrating the end-to-end order-to-shipping workflow. By leveraging Camunda, Make, and Voiceflow, we have eliminated many manual steps, ensured real-time data flow, and introduced decision automation based on stock availability. This enables seamless collaboration between departments, reduces human errors, and significantly speeds up both vendor handling and customer communication.
+
+**Key Features**
+- Automated PO intake via Google Forms with instant trigger to Camunda
+- Dynamic stock check through Google Sheets integration
+- Smart communication by the creation of automatic emails for order confirmations, backorders and vendor updates
+- Rule based decision logic implemented in Make using Routers
+- Workflow notification by task assignment alerts to responsible teams in Camunda
+- Conversational interface with Voiceflow to support customer communication
+- Error prevention by eliminating manual routing through automation and validation steps
+- Faster turnaournd by reducing processing and response time to vendors and clients
+
+![To-be Process](Pictures/To_be_process.png)
 
 To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
 
@@ -101,7 +114,6 @@ Inventory Sheet: https://docs.google.com/spreadsheets/d/1YS6Ev_YT5LyQp5M6MQcl2Yj
 # Make Scenario 1
 
 To eliminate manual tasks, increase efficienty and to incorporate workflow automation and automated decision making the first Make Scenario offers a reliable solution:
-
 
 ![Receive Order & Inventory Check](Pictures/Make_scenario_receiveOrder_inventoryCheck.png)
 
