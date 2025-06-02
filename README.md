@@ -1,4 +1,4 @@
-# 🤝 Team 25DIGIBP4: transforming an order-to-shipment process in customer service within F&B machinery industry
+# Team 25DIGIBP4: transforming an order-to-shipment process in customer service within F&B machinery industry
 
 # 🧑‍🔧 Team Members
 
@@ -45,11 +45,9 @@ Our goal is to transform the current process by introducing a partial automation
 * https://github.com/DigiBP/25DIGIBP4/blob/main/order_to_shipping_as-is_23_05.bpmn
 *  [As-Is BPMN Model – Order to Shipping](As-Is%20Process/order_to_shipping_as-is_23_05.bpmn)
 
-![As-Is Process](Pictures/As_is_process.png)
-
 This order-to-shipping process can be broken down into two main parts: (1) processing incoming POs and performing a goods availability (see tasks highlighted in green) and (2) preparing goods for shipment. The first part involves several user tasks within customer service all of which involve non-automated workflow and manual communication. First, an incoming PO is processed by retreiving it manually from a mailbox and entering the PO data into the system. after this, customer service manually checks the goods availability which is done by looking up the ordered goods in a stock database and depending on the result, customer service notifies the respective colleague to proceed with the process. If goods are available, Dispatch is notified to prepare the goods for shipment. If goods are not available, customer service notifies procurement to purchase the missing goods. (for both paths see "token videos" below). Such manual availability check and communication is tidious and leads to time wastes in the process which is further excacerbated by loose follow-ups further down the process by other process participants. 
 
-![As-Is Process Part 1](Pictures/As_is_process_part_1.png)
+![As-Is Process](Pictures/As_is_process.png)
 
 **Roles involved in the process**:
 
