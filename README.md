@@ -195,37 +195,39 @@ As part of the digitalization of the Order-to-Cash process, a testing chatbot wa
 Buddy is an LM agent designed with a comprehensive knowledge base containing detailed information about products and processes. Conversation examples, response guidelines, scenario handling, and company-specific details have been incorporated to ensure high-quality, consistent, and reliable communication with customers.
 Currently, Buddy is prepared to handle five distinct workflows, with the focus on the digitalised customer order process. 
 
-[Picture overview of Buddy]
+![Overview AI Chatbot](Pictures/Overview_of_Buddy.png)
 
 When a customer wishes to place an order or inquire about the ordering process, Buddy triggers a predefined sample text combined with a direct link to the digital order form, initiating the automated customer order process in Make. 
 
-[Screenshot Place Order]
+![Place Order](Pictures/Screenshot_Place_Order.png)
 
 If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
 
-[Picture Order Status workflow]
-[Picture Webhook Order Status]
-[Picture gSheet Order Status Inquiries]
+![Order Status workflow](Pictures/Order_Status_Workflow_Voiceflow.png)
+![Webhook Order Status](Pictures/Webhook_Order_Status.png)
+![GSheet Order Status Inquiries](Pictures/gSheet_Order_Status_Inquiry.png)
+
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
 
 For order changes, Buddy explains that such changes require direct communication with the customer service team, prompting the customer to send an email with their order ID and details to the specified email address. Similarly, if a customer wants to cancel their order, Buddy instructs them to email the customer service team with their order ID and reason for cancellation, noting that the team will contact them within 24 hours to discuss a solution.
 
 The logic here is that the cancellation of or a change of a confirmed order will require a manual intervention in the workflow. For the start these types of inquiries are intentionally made more cumbersome for the customer by requiring them to get active and write an email. This procedure is intended to curb excessive requests for order cancellation or modification.
 
-[Picture Order cancellation & changing Order Texts]
+![Order Cancellation](Pictures/Order_Cancellation_Changing_Order_Voiceflow.png)
 
 To avoid overwhelming the chatbot’s knowledge base and to maintain agility, a second specialised agent, the Return Specialist, handles return inquiries. This ensures that the chatbots knowledge bases are not getting distracted by too much data and the correct paths are being triggered. In the first rounds of testings only using one agent resulted in getting vague answers or got the chatbot stuck in loops.
 
 The steps to the second agent are being taken when the customer insists on a return of the ordered product. The Return Specialist handles different cases, currently modelled are either valid return inquiries or delivery breakage cases. For both paths, the chatbot thanks the customer for their input, collects the customer’s email address and order number, and then sends the information to the complaints team through a POST request. The customer is informed that the complaints team will reach out within 24 hours. The MAKE workflow is identical to the order status workflow, only differing in the webhook. The inquiry will land on the “Return Inquiry” page of the customer Inquiries gSheet.
 
-[Picture Return  workflow]
-[Picture gSheet Return Inquiries]
+![Return Workflow](Pictures/Return_Workflow_Voiceflow.png)
+![Gsheet Return Inquiries](Pictures/gSheet_Return_Inquiry.png)
+
 Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
 
 
-Limitations and Future Enhancements
+Current Limitations and Future Enhancements
 
-Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model not yet live, this is acceptable within the project’s scope. 
+Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model and not yet live, this is acceptable within the project’s scope. 
 To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
 Future updates will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
@@ -236,35 +238,29 @@ The chatbot significantly enhances the order process by:
 -	Providing consistent, fast, and reliable customer communication.
 -	Seamlessly complementing the automated processes in Camunda and Make
 
-While there are still some limitations, like handling specific technical questions, the chatbot represents a promising step toward digital transformation in customer service.
-
 
 # Process Improvements
-These two major improvements deliver 
+In our analysis of the original order-to-shipment process, we identified several key challenges: fragmented communication, manual data handling, inefficient follow-ups, and a lack of automation. These issues led to delays, errors, and inconsistent customer experiences. To address these pain points, we designed and implemented a digitalized and automated solution. Our improved process reduces manual workload, increases transparency, and speeds up response times, all while maintaining flexibility and human oversight where necessary.
 
-| Challange                    | Solution                                        |
+| Challenge                    | Solution                                        |
 |-------------------------|----------------------------------------------|
 | Manual PO checks           |Google Forms + automated trigger |
 | Manual stock checks      |Inventory lookup in Google Sheets         |
-| Delayed communication                |Emails sent automatically via Make |
+| Fragemented, delayed and manual communication                |Emails sent automatically via Make |
+| Inefficient Follow-Ups  |Responsible Departement gets automated notification in Camunda when new task are available|
 | No decision automation                 | Camunda decision based on stock status |
 | Process errors             |Eliminates human input at routing points|
 | Slow vendor coordination           |Email automatically generated and sent|
+| Manual communication CS with Clients |Reducing manual communication and workload for Customer Service|
+| Dely to customer requests          |Providing consistent, fast, and reliable customer communication|
+| Workflow automation  |Seamlessly complementing the automated processes in Camunda and Make|
 
 By integrating the two Make Scenarios the involvement of Customer Service within this process got eliminated completly. These now free resources may be allocated to other important business tasks.
+While there are still some limitations for our chatbot, like handling specific technical questions, the chatbot represents a promising step toward digital transformation in customer service.
+To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
 # Future Steps and Recommendations
 The current solution is not able to auto-generate Order ID's. This should be tackled bevore implementing the improvements for the process in real life.
 
-
-
-
-The following deliverables are mandatory: 
-- Link to GitHub repositories containing: 
-    - Modelling artefacts (such as BPMN or DMN) and, if required, other project arte
-      facts (such as configuration files, source code, etc.) 
-    - Documentation about the project and processes (as GitHub markdown files (e.g., 
-      Readme and interlinked .md files)) 
-- Link to a running workflow(s) and/or instantiation(s) of a: 
-   - Link to start form(s) and/or cloud-based deployment(s) 
-- Link to presentation slides
+Future updates of Buddy will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
+Moreover, Voiceflow offers the possibility of integrating the chatbot with hotlines to ensure 24/7 availability, thus enhancing customer service beyond typical service hours. 
