@@ -194,6 +194,7 @@ If the customer wants to check their order status, Buddy asks them for their ord
 [Picture Order Status workflow]
 [Picture Webhook Order Status]
 [Picture gSheet Order Status Inquiries]
+Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
 
 For order changes, Buddy explains that such changes require direct communication with the customer service team, prompting the customer to send an email with their order ID and details to the specified email address. Similarly, if a customer wants to cancel their order, Buddy instructs them to email the customer service team with their order ID and reason for cancellation, noting that the team will contact them within 24 hours to discuss a solution.
 
@@ -207,6 +208,8 @@ The steps to the second agent are being taken when the customer insists on a ret
 
 [Picture Return  workflow]
 [Picture gSheet Return Inquiries]
+Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHfP4xg9wYGTxr5Fo2pj5iYP5XjT_rtzxF-e0I/edit?gid=0#gid=0
+
 
 Limitations and Future Enhancements
 
