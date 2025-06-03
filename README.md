@@ -264,7 +264,7 @@ Future updates should:
 
 Cost-Savings Potential: With increasing automation of customer interaction and internal task routing, there is potential to reorganize support resources and reduce workload for the customer service team leading to operational savings.
 
-# Technologie Used
+# Technologies Used
 To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
 
 | Component                    | Purpose                                        |
