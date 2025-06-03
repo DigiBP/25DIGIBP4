@@ -187,7 +187,7 @@ When a customer wishes to place an order or inquire about the ordering process, 
 
 ![Place Order](Pictures/Screenshot_Place_Order.png)
 
-If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Szenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
+If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Scenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
 
 ![Order Status workflow](Pictures/Order_Status_Workflow_Voiceflow.png)
 ![Webhook Order Status](Pictures/Make_Voiceflow_Webhook_Order_Status.png)
@@ -215,7 +215,7 @@ Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHf
 **Current Limitations**
 
 Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model and not yet live, this is acceptable within the project’s scope. 
-To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
+To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more scenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
 Future updates will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
 
@@ -243,7 +243,7 @@ In our analysis of the original order-to-shipment process, we identified several
 
 By integrating the two Make Scenarios the involvement of Customer Service within this process got eliminated completly. These now free resources may be allocated to other important business tasks.
 While there are still some limitations for our chatbot, like handling specific technical questions, the chatbot represents a promising step toward digital transformation in customer service.
-To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more szenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
+To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more scenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
 
 # 🔮 Future Steps and Opportunities
 While the current process delivers major improvements in automation, communication, and efficiency, there are several areas where further enhancements can provide even greater value and scalability.
