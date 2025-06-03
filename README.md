@@ -176,9 +176,9 @@ https://digibp.engine.martinlab.science/engine-rest/message
 
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
-As part of the digitalization of the Order-to-Cash process, a testing chatbot was implemented to handle customer inquiries related to order status. The chatbot modeled in Voiceflow, named Buddy,  will serve as a virtual customer service agent, supporting the Customer Service team in their daily work. Right now the primary objective of the chatbot test version is to strengthen customer acceptance by integrating the chatbot early on the website. The chatbot's main goal will be to make the customer support process more efficient as well as preparing the team for more digital processes to come.
+As part of the digitalization of the Order-to-Cash process, a testing chatbot was implemented to handle customer inquiries related to order status. The chatbot modeled in Voiceflow, named Buddy,  will serve as a virtual customer service agent, supporting the customer service team in their daily work. Right now the primary objective of the chatbot test version is to strengthen customer acceptance by integrating the chatbot early on in the website. Other goals will be to make the customer support process more efficient as well as preparing the customer service team for more optimized digital processes to come.
 
-Buddy is an LLM agent designed with a comprehensive knowledge base containing detailed information about products and processes. Conversation examples, response guidelines, scenario handling, and company-specific details have been incorporated to ensure high-quality, consistent, and reliable communication with customers.
+Buddy is an LLM agent designed with a comprehensive knowledge base containing detailed information about products and processes. This knowledge base will be expanded with time. Conversation examples, response guidelines, scenario handling, and company-specific details have been incorporated to ensure high-quality, consistent, and reliable communication with customers.
 Currently, Buddy is prepared to handle five distinct workflows, with the focus on the digitalised customer order process. 
 
 ![Overview AI Chatbot](Pictures/Overview_of_Buddy.png)
@@ -187,7 +187,7 @@ When a customer wishes to place an order or inquire about the ordering process, 
 
 ![Place Order](Pictures/Screenshot_Place_Order.png)
 
-If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Scenario. From the gSheet the order management team can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
+If the customer wants to check their order status, Buddy asks them for their order number and email address and informs the customer that the order management team will follow up within 24 hours. The information gets send into the prepared “Customer Inquiry gSheet” using a POST API via an MAKE Scenario. From the gSheet the order management team, part of the internal customer service team, can draw the information, assign an responsible person and document the contacting of the customer. However, this template is a first draft and can be refined as soon as the next steps for digitalization of the companies processes are taken.
 
 ![Order Status workflow](Pictures/Order_Status_Workflow_Voiceflow.png)
 ![Webhook Order Status](Pictures/Make_Voiceflow_Webhook_Order_Status.png)
@@ -197,7 +197,7 @@ Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHf
 
 For order changes, Buddy explains that such changes require direct communication with the customer service team, prompting the customer to send an email with their order ID and details to the specified email address. Similarly, if a customer wants to cancel their order, Buddy instructs them to email the customer service team with their order ID and reason for cancellation, noting that the team will contact them within 24 hours to discuss a solution.
 
-The logic here is that the cancellation of or a change of a confirmed order will require a manual intervention in the workflow. For the start these types of inquiries are intentionally made more cumbersome for the customer by requiring them to get active and write an email. This procedure is intended to curb excessive requests for order cancellation or modification.
+The logic here is that the cancellation of or a change of a confirmed order will require a manual intervention in the workflow. For the start these types of inquiries are intentionally made more cumbersome for the customer by requiring them to get active and write an email. This is intended to curb excessive requests for order cancellation or modification.
 
 ![Order Cancellation](Pictures/Order_Cancellation_Changing_Order_Voiceflow.png)
 
@@ -215,9 +215,9 @@ Link Customer Inquiries gSheet: https://docs.google.com/spreadsheets/d/1jipBzAHf
 **Current Limitations**
 
 Currently, Buddy may face challenges with highly specific inquiries, such as incorrect order numbers, leading to response loops. As Buddy is still a test model and not yet live, this is acceptable within the project’s scope. 
-To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more scenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
+To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more scenarios will make the chatbot easily scalable to cover additional services (e.g. delivery updates, FAQs and more) in the future.
 
-Future updates will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered, but additional languages can be integrated in future updates. 
+Future updates will focus on refining phrasing and expanding language capabilities. At the moment the chatbot operates in English only when workflows are triggered.
 
 The chatbot significantly enhances the order process by:
 -	Reducing manual communication and workload for Customer Service
@@ -243,7 +243,7 @@ In our analysis of the original order-to-shipment process, we identified several
 
 By integrating the two Make Scenarios the involvement of Customer Service within this process got eliminated completly. These now free resources may be allocated to other important business tasks.
 While there are still some limitations for our chatbot, like handling specific technical questions, the chatbot represents a promising step toward digital transformation in customer service.
-To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more scenarios will make the chatbot easily scalable to cover additional services (e.g., delivery updates, FAQs and more) in the future.
+To mitigate the risk of misinformation, Buddy is designed with restricted pathways, ensuring that only valid paths are triggered and preventing inaccurate responses. Loosening those restrictions and adding more scenarios will make the chatbot easily scalable.
 
 # 🔮 Future Steps and Opportunities
 While the current process delivers major improvements in automation, communication, and efficiency, there are several areas where further enhancements can provide even greater value and scalability.
@@ -258,6 +258,7 @@ AI Agent Capabilities: The Voiceflow assistant ("Buddy") currently responds in E
 Future updates should:
 - Expand language capabilities.
 - Improve natural language phrasing and flexibility.
+- Expand paths, automate and digitalize additional processes
 - Enable integration with live support or hotlines for 24/7 customer service.
 
 **Operational Efficiency and Costs**
