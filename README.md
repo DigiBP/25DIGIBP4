@@ -103,7 +103,7 @@ Inventory Sheet: https://docs.google.com/spreadsheets/d/1YS6Ev_YT5LyQp5M6MQcl2Yj
 
 # Make Scenario 1
 
-To eliminate manual tasks, increase efficienty and to incorporate workflow automation and automated decision making the first Make Scenario offers a reliable solution:
+To eliminate manual tasks, increase efficiency and to incorporate workflow automation and automated decision making the first Make Scenario offers a reliable solution:
 
 ![Receive Order & Inventory Check](Pictures/Make_scenario_receiveOrder_inventoryCheck.png)
 
@@ -115,7 +115,7 @@ It takes over the following tasks:
 -	perform Goods Availability check 
 -	request goods shipment with Dispatch
 AND
--	contact procurement to backorder and out of stock item
+-	contact procurement to backorder an out of stock item
   
 ![Obsolet Manual Tasks](Pictures/Obsolet_manual_tasks.png)
 
