@@ -174,9 +174,6 @@ https://digibp.engine.martinlab.science/engine-rest/message
 4. Vendor receives email → sends delivery date manually
 5. Professor triggers message via Postman (token continues in Camunda)
 
-![To-be Process](Pictures/As_is_process.png)
-
-
 # 💬 Voiceflow Chatbot – Digital Customer Support Assistant
 
 As part of the digitalization of the Order-to-Cash process, a testing chatbot was implemented to handle customer inquiries related to order status. The chatbot modeled in Voiceflow, named Buddy,  will serve as a virtual customer service agent, supporting the Customer Service team in their daily work. Right now the primary objective of the chatbot test version is to strengthen customer acceptance by integrating the chatbot early on the website. The chatbot's main goal will be to make the customer support process more efficient as well as preparing the team for more digital processes to come.
