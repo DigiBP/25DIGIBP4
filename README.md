@@ -238,7 +238,7 @@ In our analysis of the original order-to-shipment process, we identified several
 | Process errors             |Eliminates human input at routing points|
 | Slow vendor coordination           |Email automatically generated and sent|
 | Manual communication CS with Clients |Reducing manual communication and workload for Customer Service|
-| Dely to customer requests          |Providing consistent, fast, and reliable customer communication|
+| Delay to customer requests          |Providing consistent, fast, and reliable customer communication|
 | Workflow automation  |Seamlessly complementing the automated processes in Camunda and Make|
 
 By integrating the two Make Scenarios the involvement of Customer Service within this process got eliminated completly. These now free resources may be allocated to other important business tasks.
@@ -263,7 +263,9 @@ Future updates should:
 
 **Operational Efficiency and Costs**
 
-Cost-Savings Potential: With increasing automation of customer interaction and internal task routing, there is potential to reorganize support resources and reduce workload for the customer service team leading to operational savings.
+- Cost-Savings Potential: With increasing automation of customer interaction and internal task routing, there is potential to reorganize support resources and reduce workload for the customer service team leading to operational savings.
+- Integration with ERP/CRM: To align closer with the business need we advise to explore the potential to integrate the proposed changes with internal ERP and/or CRM systems for a an even more seamless process e.g. pull inventory availability directly from SAP
+
 
 # Technologies Used
 To tackle the current challenges of the AS-IS Process the following technologies have been used and applied:
