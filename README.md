@@ -158,7 +158,7 @@ As soon as the vendor replies with a confirmation via email, Postman is used to 
 
 **Example POST endpoint:**
 
-POST https://digibp.engine.martinlab.science/engine-rest/message
+https://digibp.engine.martinlab.science/engine-rest/message
 
 ![Post Endpoint](Pictures/Usage_postman.png)
 
